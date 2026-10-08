@@ -1,0 +1,17 @@
+16_S16_L001_R1_001_TCAG.nosymbio.fastq.bam
+16_S16_L001_R1_001_TGGT.nosymbio.fastq.bam
+17_S17_L001_R1_001_GACT.nosymbio.fastq.bam
+17_S17_L001_R1_001_TGTC.nosymbio.fastq.bam
+30_S30_L001_R1_001_GACT.nosymbio.fastq.bam
+32_S32_L001_R1_001_GACT.nosymbio.fastq.bam
+SRR24593957.fastq.bam
+SRR24593958.fastq.bam
+SRR24593960.fastq.bam
+SRR24593961.fastq.bam
+SRR24593962.fastq.bam
+SRR24593963.fastq.bam
+SRR24593964.fastq.bam
+SRR24593966.fastq.bam
+SRR24593975.fastq.bam
+SRR24593976.fastq.bam
+SRR24593979.fastq.bam

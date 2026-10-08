@@ -1,0 +1,66 @@
+﻿Sample ID/tube #,Location,Species,Full_Location,Full_Species,"stock concentration (nanodrop, ng/uL)",uL to add to get 500ng total in 20uL (doing this instead of 250ng in 10uL because I want to add at least 1uL of each sample),Volume (volume of stock solution + 10uL of water) for initial dilution,"initial dilution concentration (qubit, ng/uL)","To dilute or not to dilute, that is the question",Extra uL of water to add to reach final dilution (-1uL),"total uL (after final qubit, -1uL for samples that I qubit checked)",Final qubit checks,,Notes,
+61,Reef,SS,Spaanse Water Reef,Siderastrea siderea,57.7,8.67,18.67,12.8,DON'T DILUTE,"N/A, use stock",10,29.2,,Used 11uL stock DNA solution -1 for qubit check,
+62,Reef,SS,Spaanse Water Reef,Siderastrea siderea,361.6,1.38,11.38,47,dilute,9.01,20,25,,,
+63,Reef,SS,Spaanse Water Reef,Siderastrea siderea,237.8,2.1,12.1,44.4,dilute,8.39,19,23.4,,,
+64,Reef,SS,Spaanse Water Reef,Siderastrea siderea,262.2,1.91,11.91,47.8,dilute,9.86,21,25,,,
+65,Reef,SS,Spaanse Water Reef,Siderastrea siderea,137.6,3.63,13.63,47.4,dilute,11.21,23,24.2,,,
+66,Reef,SS,Spaanse Water Reef,Siderastrea siderea,84.5,5.92,15.92,18.2,DON'T DILUTE,"N/A, use stock + water",11,25,,"Stock solution 42.6ng/uL, Used 7uL DNA + 4uL water for 27ng/uL concentration",
+67,Reef,SS,Spaanse Water Reef,Siderastrea siderea,169.1,2.96,12.96,38.4,dilute,5.95,17,24.2,,,
+68,Reef,SS,Spaanse Water Reef,Siderastrea siderea,192.2,2.6,12.6,30,dilute,1.52,14,25,,,
+69,Reef,SS,Spaanse Water Reef,Siderastrea siderea,177,2.82,12.82,27.4,DON'T DILUTE,N/A use initial dilution,11,22.8,,,
+70,Reef,SS,Spaanse Water Reef,Siderastrea siderea,279.8,1.79,11.79,33.2,dilute,2.87,14,25,,,
+71,Reef,PP,Spaanse Water Reef,Branching Porites sp.,120.5,4.15,14.15,29.8,DON'T DILUTE,N/A use initial dilution,14,27.6,,,
+72,Reef,PP,Spaanse Water Reef,Branching Porites sp.,126.5,3.95,13.95,37.2,dilute,5.81,19,25,,,
+73,Reef,PP,Spaanse Water Reef,Branching Porites sp.,138.9,3.6,13.6,35.6,dilute,4.77,17,26.8,,*HAD TO REDO BC THE TUBE BROKE AT THE LAST SECOND! PLEASE USE SINGLE 73 TUBE,
+74,Reef,PP,Spaanse Water Reef,Branching Porites sp.,118.7,4.21,14.21,35.4,dilute,4.91,18,25,,,
+75,Reef,PP,Spaanse Water Reef,Branching Porites sp.,238.6,2.1,12.1,49.6,dilute,10.91,21,25,,,
+76,Reef,PP,Spaanse Water Reef,Branching Porites sp.,98.1,5.1,15.1,28.8,DON'T DILUTE,N/A use initial dilution,16,25,,,
+77,Reef,PP,Spaanse Water Reef,Branching Porites sp.,237,2.11,12.11,46.8,dilute,9.56,20,25.8,,,
+78,Reef,PP,Spaanse Water Reef,Branching Porites sp.,243.1,2.06,12.06,39.8,dilute,6.14,18,25,,,
+79,Reef,PP,Spaanse Water Reef,Branching Porites sp.,272.2,1.84,11.84,47,dilute,9.42,20,24.6,,,
+80,Reef,PP,Spaanse Water Reef,Branching Porites sp.,237.2,2.11,12.11,46.6,dilute,9.46,21,25,,,
+51,Bay,PP,Spaanse Water Bay,Branching Porites sp.,319.5,1.56,11.56,59,dilute,14.72,25,27.8,,,
+52,Bay,PP,Spaanse Water Bay,Branching Porites sp.,311.3,1.61,11.61,56.4,dilute,13.58,25,25,,,
+53,Bay,PP,Spaanse Water Bay,Branching Porites sp.,257.1,1.94,11.94,46.4,dilute,9.22,19,25.2,,,
+54,Bay,PP,Spaanse Water Bay,Branching Porites sp.,162.2,3.08,13.08,37.8,dilute,5.7,18,25,,,
+55,Bay,PP,Spaanse Water Bay,Branching Porites sp.,314.7,1.59,11.59,46.6,dilute,9.01,19,23.8,,,
+56,Bay,PP,Spaanse Water Bay,Branching Porites sp.,319.6,1.56,11.56,46.6,dilute,8.99,20,25,,,
+57,Bay,PP,Spaanse Water Bay,Branching Porites sp.,289.7,1.73,11.73,39.8,dilute,5.94,16,23.2,,,
+58,Bay,PP,Spaanse Water Bay,Branching Porites sp.,236.8,2.11,12.11,47.8,dilute,10.04,22,25,,,
+59,Bay,PP,Spaanse Water Bay,Branching Porites sp.,135.6,3.69,13.69,36.2,dilute,5.13,17,24,,,
+60,Bay,PP,Spaanse Water Bay,Branching Porites sp.,251,1.99,11.99,42.6,dilute,7.44,19,25,,,
+41,Bay,SS,Spaanse Water Bay,Siderastrea siderea,230.8,2.17,12.17,39.8,dilute,6.2,17,25.2,,,
+42,Bay,SS,Spaanse Water Bay,Siderastrea siderea,172.3,2.9,12.9,45.8,dilute,9.73,22,25,,,
+43,Bay,SS,Spaanse Water Bay,Siderastrea siderea,182.8,2.74,12.74,35,dilute,4.1,15,28.2,,,
+44,Bay,SS,Spaanse Water Bay,Siderastrea siderea,427.3,1.17,11.17,29.2,DON'T DILUTE,N/A use initial dilution,10,25,,,
+45,Bay,SS,Spaanse Water Bay,Siderastrea siderea,150,3.33,13.33,30.8,dilute,2.09,15,26,,,
+46,Bay,SS,Spaanse Water Bay,Siderastrea siderea,292.6,1.71,11.71,36.4,dilute,4.34,15,25,,,
+47,Bay,SS,Spaanse Water Bay,Siderastrea siderea,182.8,2.74,12.74,53.2,dilute,13.37,24,25.4,,,
+48,Bay,SS,Spaanse Water Bay,Siderastrea siderea,307.3,1.63,11.63,43.4,dilute,7.56,19,25,,,
+49,Bay,SS,Spaanse Water Bay,Siderastrea siderea,179.8,2.78,12.78,33.8,dilute,3.5,15,27.4,,,
+50,Bay,SS,Spaanse Water Bay,Siderastrea siderea,338.4,1.48,11.48,42.2,dilute,6.9,17,25,,,
+bam,SampleID,Species,Project,TechReps,Clones,alignment_rate,file_size,lane,remove_lowquality,techrep_to_remove,clone_to_remove,Site,Actual_depth,lineage,region
+16_S16_L001_R1_001_ACCA.nosymbio.fastq.bam,43,SSID,Curacao,NA,NA,91.97,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+16_S16_L001_R1_001_AGAC.nosymbio.fastq.bam,42,SSID,Curacao,NA,NA,92.2,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+16_S16_L001_R1_001_AGTG.nosymbio.fastq.bam,44,SSID,Curacao,NA,NA,92.6,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+16_S16_L001_R1_001_CATC.nosymbio.fastq.bam,45,SSID,Curacao,NA,NA,92.45,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+16_S16_L001_R1_001_CTAC.nosymbio.fastq.bam,49,SSID,Curacao,NA,NA,92.03,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+16_S16_L001_R1_001_GACT.nosymbio.fastq.bam,62,SSID,Curacao,NA,NA,91.53,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+16_S16_L001_R1_001_GCTT.nosymbio.fastq.bam,48,SSID,Curacao,NA,NA,91.23,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+16_S16_L001_R1_001_GTGA.nosymbio.fastq.bam,46,SSID,Curacao,NA,NA,92.58,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+16_S16_L001_R1_001_TCAC.nosymbio.fastq.bam,61,SSID,Curacao,NA,NA,91.39,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+16_S16_L001_R1_001_TCAG.nosymbio.fastq.bam,47,SSID,Curacao,11,NA,92.36,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+16_S16_L001_R1_001_TGGT.nosymbio.fastq.bam,41,SSID,Curacao,10,NA,91.96,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+16_S16_L001_R1_001_TGTC.nosymbio.fastq.bam,50,SSID,Curacao,NA,NA,91.87,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+17_S17_L001_R1_001_ACCA.nosymbio.fastq.bam,65,SSID,Curacao,8,NA,89.78,NA,2,NA,NA,NA,Curacao,NA,2,Curacao
+17_S17_L001_R1_001_AGAC.nosymbio.fastq.bam,64,SSID,Curacao,NA,NA,88.7,NA,2,NA,NA,NA,Curacao,NA,2,Curacao
+17_S17_L001_R1_001_AGTG.nosymbio.fastq.bam,66,SSID,Curacao,NA,NA,90.1,NA,2,NA,NA,NA,Curacao,NA,2,Curacao
+17_S17_L001_R1_001_CATC.nosymbio.fastq.bam,67,SSID,Curacao,NA,NA,90.22,NA,2,NA,NA,NA,Curacao,NA,2,Curacao
+17_S17_L001_R1_001_CTAC.nosymbio.fastq.bam,41,SSID,Curacao,10,NA,90.29,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+17_S17_L001_R1_001_GACT.nosymbio.fastq.bam,70,SSID,Curacao,7,NA,89.7,NA,2,NA,NA,NA,Curacao,NA,2,Curacao
+17_S17_L001_R1_001_GCTT.nosymbio.fastq.bam,70,SSID,Curacao,7,NA,89.34,NA,2,NA,y,NA,Curacao,NA,NA,Curacao
+17_S17_L001_R1_001_GTGA.nosymbio.fastq.bam,68,SSID,Curacao,NA,NA,90.07,NA,2,NA,NA,NA,Curacao,NA,2,Curacao
+17_S17_L001_R1_001_TCAC.nosymbio.fastq.bam,47,SSID,Curacao,11,NA,90.4,NA,2,y,NA,NA,Curacao,NA,NA,Curacao
+17_S17_L001_R1_001_TCAG.nosymbio.fastq.bam,69,SSID,Curacao,NA,NA,89.59,NA,2,NA,NA,NA,Curacao,NA,2,Curacao
+17_S17_L001_R1_001_TGGT.nosymbio.fastq.bam,63,SSID,Curacao,NA,NA,88.93,NA,2,NA,NA,NA,Curacao,NA,4,Curacao
+17_S17_L001_R1_001_TGTC.nosymbio.fastq.bam,65,SSID,Curacao,8,NA,89.51,NA,2,NA,y,NA,Curacao,NA,NA,Curacao

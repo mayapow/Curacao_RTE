@@ -1,0 +1,62 @@
+"","bam","sample_id","sitename","reef","lineage"
+"1","SRR24593955.fastq.bam","I4I","PD","Inner Reef","L2"
+"2","SRR24593956.fastq.bam","O3B","CA","Outer Reef","L1"
+"3","SRR24593957.fastq.bam","I4G","PD","Inner Reef",NA
+"4","SRR24593958.fastq.bam","O2A_CLONE",NA,NA,NA
+"5","SRR24593959.fastq.bam","O2A","BS","Outer Reef","L1"
+"6","SRR24593960.fastq.bam","O4A_CLONE",NA,NA,NA
+"7","SRR24593961.fastq.bam","O3B_CLONE",NA,NA,NA
+"8","SRR24593962.fastq.bam","I3H_CLONE",NA,NA,NA
+"9","SRR24593963.fastq.bam","I2E_CLONE2",NA,NA,NA
+"10","SRR24593964.fastq.bam","I4A_CLONE",NA,NA,NA
+"11","SRR24593965.fastq.bam","I4E","PD","Inner Reef","L2"
+"12","SRR24593966.fastq.bam","I3C_CLONE",NA,NA,NA
+"13","SRR24593967.fastq.bam","O4H","BN","Outer Reef","L1"
+"14","SRR24593968.fastq.bam","I4D","PD","Inner Reef","L2"
+"15","SRR24593969.fastq.bam","I2F","SP","Inner Reef","L2"
+"16","SRR24593970.fastq.bam","O3D","CA","Outer Reef","L1"
+"17","SRR24593971.fastq.bam","I3G","CI","Inner Reef","L2"
+"18","SRR24593972.fastq.bam","I2G","SP","Inner Reef","L2"
+"19","SRR24593973.fastq.bam","O2G","BS","Outer Reef","L2"
+"20","SRR24593974.fastq.bam","I3E","CI","Inner Reef","L2"
+"21","SRR24593975.fastq.bam","O2E_CLONE",NA,NA,NA
+"22","SRR24593976.fastq.bam","O4E_CLONE",NA,NA,NA
+"23","SRR24593977.fastq.bam","I2C","SP","Inner Reef","L2"
+"24","SRR24593978.fastq.bam","O4B","BN","Outer Reef","L1"
+"25","SRR24593979.fastq.bam","I2E_CLONE",NA,NA,NA
+"26","SRR24593980.fastq.bam","O2F","BS","Outer Reef","L1"
+"27","SRR24593981.fastq.bam","O2H","BS","Outer Reef","L1"
+"28","SRR24593982.fastq.bam","I2D","SP","Inner Reef","L3"
+"29","SRR24593983.fastq.bam","I4C","PD","Inner Reef","L2"
+"30","SRR24593984.fastq.bam","I4B","PD","Inner Reef","L2"
+"31","SRR24593985.fastq.bam","I2I","SP","Inner Reef","L3"
+"32","SRR24593986.fastq.bam","O3I","CA","Outer Reef","L1"
+"33","SRR24593987.fastq.bam","I3H","CI","Inner Reef","L1"
+"34","SRR24593988.fastq.bam","O2E","BS","Outer Reef","L1"
+"35","SRR24593989.fastq.bam","O4E","BN","Outer Reef","L1"
+"36","SRR24593990.fastq.bam","O2D","BS","Outer Reef","L1"
+"37","SRR24593991.fastq.bam","O3C","CA","Outer Reef","L1"
+"38","SRR24593992.fastq.bam","I4A","PD","Inner Reef","L1"
+"39","SRR24593993.fastq.bam","O4F","BN","Outer Reef","L1"
+"40","SRR24593994.fastq.bam","O3G","CA","Outer Reef","L1"
+"41","SRR24593995.fastq.bam","O2C","BS","Outer Reef","L1"
+"42","SRR24593996.fastq.bam","O2B","BS","Outer Reef","L1"
+"43","SRR24593997.fastq.bam","I4F","PD","Inner Reef","L2"
+"44","SRR24593998.fastq.bam","I4H","PD","Inner Reef","L2"
+"45","SRR24593999.fastq.bam","I3A","CI","Inner Reef","L1"
+"46","SRR24594000.fastq.bam","O3E","CA","Outer Reef","L1"
+"47","SRR24594001.fastq.bam","O4G","BN","Outer Reef","L1"
+"48","SRR24594002.fastq.bam","I3D","CI","Inner Reef","L2"
+"49","SRR24594003.fastq.bam","I3I","CI","Inner Reef","L1"
+"50","SRR24594004.fastq.bam","O4D","BN","Outer Reef","L1"
+"51","SRR24594005.fastq.bam","I2A","SP","Inner Reef","L2"
+"52","SRR24594006.fastq.bam","I3F","CI","Inner Reef","L1"
+"53","SRR24594007.fastq.bam","I2B","SP","Inner Reef","L2"
+"54","SRR24594008.fastq.bam","O4C","BN","Outer Reef","L1"
+"55","SRR24594009.fastq.bam","O4A","BN","Outer Reef","L1"
+"56","SRR24594010.fastq.bam","O3F","CA","Outer Reef","L1"
+"57","SRR24594011.fastq.bam","O3H","CA","Outer Reef","L1"
+"58","SRR24594012.fastq.bam","O2I","BS","Outer Reef","L1"
+"59","SRR24594013.fastq.bam","I2E","SP","Inner Reef","L2"
+"60","SRR24594014.fastq.bam","I2H","SP","Inner Reef","L3"
+"61","SRR24594015.fastq.bam","I3C","CI","Inner Reef","L2"

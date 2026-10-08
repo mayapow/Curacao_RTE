@@ -1,0 +1,75 @@
+bam,sample_id,Species,Project,TechReps,Clones,alignment_rate,file_size,lane,remove_lowquality,techrep_to_remove,clone_to_remove,Site,Actual_depth,lineage,region,reef_bay
+16_S16_L001_R1_001_ACCA.nosymbio.fastq.bam,CW43,SSID,Curacao,NA,NA,91.97,NA,2,y,NA,NA,bay,NA,unknown,Curacao,bay
+16_S16_L001_R1_001_AGAC.nosymbio.fastq.bam,CW42,SSID,Curacao,NA,NA,92.2,NA,2,y,NA,NA,bay,NA,unknown,Curacao,bay
+16_S16_L001_R1_001_AGTG.nosymbio.fastq.bam,CW44,SSID,Curacao,NA,NA,92.6,NA,2,y,NA,NA,bay,NA,unknown,Curacao,bay
+16_S16_L001_R1_001_CATC.nosymbio.fastq.bam,CW45,SSID,Curacao,NA,NA,92.45,NA,2,y,NA,NA,bay,NA,unknown,Curacao,bay
+16_S16_L001_R1_001_CTAC.nosymbio.fastq.bam,CW49,SSID,Curacao,NA,NA,92.03,NA,2,y,NA,NA,bay,NA,unknown,Curacao,bay
+16_S16_L001_R1_001_GACT.nosymbio.fastq.bam,CW62,SSID,Curacao,NA,NA,91.53,NA,2,y,NA,NA,reef,NA,unknown,Curacao,reef
+16_S16_L001_R1_001_GCTT.nosymbio.fastq.bam,CW48,SSID,Curacao,NA,NA,91.23,NA,2,y,NA,NA,bay,NA,unknown,Curacao,bay
+16_S16_L001_R1_001_GTGA.nosymbio.fastq.bam,CW46,SSID,Curacao,NA,NA,92.58,NA,2,y,NA,NA,bay,NA,unknown,Curacao,bay
+16_S16_L001_R1_001_TCAC.nosymbio.fastq.bam,CW61,SSID,Curacao,NA,NA,91.39,NA,2,y,NA,NA,reef,NA,unknown,Curacao,reef
+16_S16_L001_R1_001_TCAG.nosymbio.fastq.bam,CW47A,SSID,Curacao,11,NA,92.36,NA,2,y,NA,NA,bay,NA,unknown,Curacao,bay
+16_S16_L001_R1_001_TGGT.nosymbio.fastq.bam,CW41A,SSID,Curacao,10,NA,91.96,NA,2,y,NA,NA,bay,NA,unknown,Curacao,bay
+16_S16_L001_R1_001_TGTC.nosymbio.fastq.bam,CW50,SSID,Curacao,NA,NA,91.87,NA,2,y,NA,NA,bay,NA,unknown,Curacao,bay
+17_S17_L001_R1_001_ACCA.nosymbio.fastq.bam,CW65A,SSID,Curacao,8,NA,89.78,NA,2,NA,NA,NA,reef,NA,2,Curacao,reef
+17_S17_L001_R1_001_AGAC.nosymbio.fastq.bam,CW64,SSID,Curacao,NA,NA,88.7,NA,2,NA,NA,NA,reef,NA,2,Curacao,reef
+17_S17_L001_R1_001_AGTG.nosymbio.fastq.bam,CW66,SSID,Curacao,NA,NA,90.1,NA,2,NA,NA,NA,reef,NA,2,Curacao,reef
+17_S17_L001_R1_001_CATC.nosymbio.fastq.bam,CW67,SSID,Curacao,NA,NA,90.22,NA,2,NA,NA,NA,reef,NA,2,Curacao,reef
+17_S17_L001_R1_001_CTAC.nosymbio.fastq.bam,CW41B,SSID,Curacao,10,NA,90.29,NA,2,y,NA,NA,bay,NA,unknown,Curacao,bay
+17_S17_L001_R1_001_GACT.nosymbio.fastq.bam,CW70A,SSID,Curacao,7,NA,89.7,NA,2,NA,NA,NA,reef,NA,2,Curacao,reef
+17_S17_L001_R1_001_GCTT.nosymbio.fastq.bam,CW70B,SSID,Curacao,7,NA,89.34,NA,2,NA,y,NA,reef,NA,unknown,Curacao,reef
+17_S17_L001_R1_001_GTGA.nosymbio.fastq.bam,CW68,SSID,Curacao,NA,NA,90.07,NA,2,NA,NA,NA,reef,NA,2,Curacao,reef
+17_S17_L001_R1_001_TCAC.nosymbio.fastq.bam,CW47B,SSID,Curacao,11,NA,90.4,NA,2,y,NA,NA,bay,NA,unknown,Curacao,bay
+17_S17_L001_R1_001_TCAG.nosymbio.fastq.bam,CW69,SSID,Curacao,NA,NA,89.59,NA,2,NA,NA,NA,reef,NA,2,Curacao,reef
+17_S17_L001_R1_001_TGGT.nosymbio.fastq.bam,CW63,SSID,Curacao,NA,NA,88.93,NA,2,NA,NA,NA,reef,NA,4,Curacao,reef
+17_S17_L001_R1_001_TGTC.nosymbio.fastq.bam,CW65B,SSID,Curacao,8,NA,89.51,NA,2,NA,y,NA,reef,NA,unknown,Curacao,reef
+23_S23_L001_R1_001_TCAC.nosymbio.fastq.bam,SSID2,SSID,GenomeCuracao,NA,NA,78.42,NA,2,NA,NA,y,Curacao,NA,2,Curacao,Curacao
+26_S26_L001_R1_001_CTAC.nosymbio.fastq.bam,E1,SSID,FGB,NA,NA,89.34,NA,2,NA,NA,NA,FGB,NA,2,FGB,FGB
+26_S26_L001_R1_001_GCTT.nosymbio.fastq.bam,W,SSID,FGB,NA,NA,84.51,NA,2,NA,NA,NA,FGB,NA,2,FGB,FGB
+26_S26_L001_R1_001_TGTC.nosymbio.fastq.bam,E2,SSID,FGB,NA,NA,88.78,NA,2,NA,NA,NA,FGB,NA,2,FGB,FGB
+29_S29_L001_R1_001_ACCA.nosymbio.fastq.bam,BZ3,SSID,BelizeDiseased,NA,NA,88.26,NA,2,NA,NA,NA,cbc 30 South,32,2,Belize,Belize
+29_S29_L001_R1_001_AGAC.nosymbio.fastq.bam,BZ2,SSID,BelizeDiseased,NA,NA,90.57,NA,2,NA,NA,NA,cbc 30 South,33,2,Belize,Belize
+29_S29_L001_R1_001_AGTG.nosymbio.fastq.bam,BZ4,SSID,BelizeDiseased,NA,NA,90.68,NA,2,NA,NA,NA,cbc 30 South,32,2,Belize,Belize
+29_S29_L001_R1_001_CATC.nosymbio.fastq.bam,BZ5,SSID,BelizeDiseased,NA,NA,90.16,NA,2,NA,NA,NA,cbc 30 South,32,2,Belize,Belize
+29_S29_L001_R1_001_CTAC.nosymbio.fastq.bam,BZ9,SSID,BelizeDiseased,NA,NA,88.19,NA,2,NA,NA,NA,cbc 30 South,34,2,Belize,Belize
+29_S29_L001_R1_001_GACT.nosymbio.fastq.bam,BZ12,SSID,BelizeDiseased,NA,NA,90.21,NA,2,NA,NA,NA,cbc 30 South,34,2,Belize,Belize
+29_S29_L001_R1_001_TCAG.nosymbio.fastq.bam,BZ7,SSID,BelizeDiseased,NA,NA,90.4,NA,2,NA,NA,NA,cbc 30 South,34,2,Belize,Belize
+29_S29_L001_R1_001_TGGT.nosymbio.fastq.bam,BZ1,SSID,BelizeDiseased,NA,NA,81.23,NA,2,NA,NA,NA,cbc 30 South,32,4,Belize,Belize
+29_S29_L001_R1_001_TGTC.nosymbio.fastq.bam,BZ10,SSID,BelizeDiseased,NA,NA,90.84,NA,2,NA,NA,NA,cbc 30 South,34,2,Belize,Belize
+30_S30_L001_R1_001_ACCA.nosymbio.fastq.bam,BZ15,SSID,BelizeDiseased,NA,NA,88.65,NA,2,NA,NA,NA,cbc 30 South,33,2,Belize,Belize
+30_S30_L001_R1_001_AGAC.nosymbio.fastq.bam,BZ14,SSID,BelizeDiseased,NA,NA,85,NA,2,NA,NA,NA,cbc 30 South,33,2,Belize,Belize
+30_S30_L001_R1_001_AGTG.nosymbio.fastq.bam,BZ16,SSID,BelizeDiseased,NA,NA,90.53,NA,2,NA,NA,NA,cbc 30 South,33,2,Belize,Belize
+30_S30_L001_R1_001_CATC.nosymbio.fastq.bam,BZ17,SSID,BelizeDiseased,NA,NA,87.56,NA,2,NA,NA,NA,cbc 30 South,33,2,Belize,Belize
+30_S30_L001_R1_001_CTAC.nosymbio.fastq.bam,BZ21,SSID,BelizeDiseased,NA,NA,85.7,NA,2,NA,NA,NA,south reef 30 North,30,2,Belize,Belize
+30_S30_L001_R1_001_GACT.nosymbio.fastq.bam,BZ24,SSID,BelizeDiseased,NA,18,67.37,NA,2,NA,NA,y,south reef 30 North,30,2,Belize,Belize
+30_S30_L001_R1_001_GCTT.nosymbio.fastq.bam,BZ20,SSID,BelizeDiseased,NA,18,89.85,NA,2,NA,NA,NA,south reef 30 North,31,2,Belize,Belize
+30_S30_L001_R1_001_GTGA.nosymbio.fastq.bam,BZ18,SSID,BelizeDiseased,NA,NA,90.4,NA,2,NA,NA,NA,cbc 30 South,34,2,Belize,Belize
+30_S30_L001_R1_001_TGTC.nosymbio.fastq.bam,BZ22,SSID,BelizeDiseased,NA,NA,87.3,NA,2,NA,NA,NA,south reef 30 North,31,2,Belize,Belize
+31_S31_L001_R1_001_ACCA.nosymbio.fastq.bam,BZ27,SSID,BelizeDiseased,NA,NA,36.4,NA,2,y,NA,NA,south reef 30 North,26,2,Belize,Belize
+31_S31_L001_R1_001_AGAC.nosymbio.fastq.bam,BZ26,SSID,BelizeDiseased,NA,NA,90.57,NA,2,y,NA,NA,south reef 30 North,33,2,Belize,Belize
+31_S31_L001_R1_001_AGTG.nosymbio.fastq.bam,BZ28,SSID,BelizeDiseased,NA,NA,88.32,NA,2,NA,NA,NA,south reef 30 North,32,4,Belize,Belize
+31_S31_L001_R1_001_CATC.nosymbio.fastq.bam,BZ29,SSID,BelizeDiseased,NA,NA,90.92,NA,2,NA,NA,NA,south reef 30 North,33,2,Belize,Belize
+31_S31_L001_R1_001_CTAC.nosymbio.fastq.bam,BZ34,SSID,BelizeDiseased,NA,NA,74.86,NA,2,y,NA,NA,cbc house reef,11,4,Belize,Belize
+31_S31_L001_R1_001_GTGA.nosymbio.fastq.bam,BZ31,SSID,BelizeDiseased,NA,NA,90.48,NA,2,y,NA,NA,south reef 30 North,34,2,Belize,Belize
+31_S31_L001_R1_001_TCAC.nosymbio.fastq.bam,BZ23,SSID,BelizeDiseased,NA,NA,90.67,NA,2,NA,NA,NA,south reef 30 North,31,2,Belize,Belize
+31_S31_L001_R1_001_TGGT.nosymbio.fastq.bam,BZ25,SSID,BelizeDiseased,NA,NA,88.42,NA,2,NA,NA,NA,south reef 30 North,33,4,Belize,Belize
+32_S32_L001_R1_001_ACCA.nosymbio.fastq.bam,BZ41,SSID,BelizeDiseased,NA,NA,85.52,NA,2,NA,NA,NA,Lagoon Reef,19,4,Belize,Belize
+32_S32_L001_R1_001_AGAC.nosymbio.fastq.bam,BZ40,SSID,BelizeDiseased,NA,NA,86.85,NA,2,NA,NA,NA,Lagoon Reef,20,2,Belize,Belize
+32_S32_L001_R1_001_AGTG.nosymbio.fastq.bam,BZ42,SSID,BelizeDiseased,NA,NA,86.42,NA,2,NA,NA,NA,Lagoon Reef,19,2,Belize,Belize
+32_S32_L001_R1_001_CATC.nosymbio.fastq.bam,BZ43,SSID,BelizeDiseased,NA,NA,88.81,NA,2,NA,NA,NA,Lagoon Reef,20,4,Belize,Belize
+32_S32_L001_R1_001_CTAC.nosymbio.fastq.bam,BZ47,SSID,BelizeDiseased,NA,NA,85.96,NA,2,NA,NA,NA,Lagoon Reef,18,2,Belize,Belize
+32_S32_L001_R1_001_GACT.nosymbio.fastq.bam,BZ45,SSID,BelizeDiseased,NA,NA,,NA,2,NA,NA,NA,Lagoon Reef,20,4,Belize,Belize
+32_S32_L001_R1_001_GCTT.nosymbio.fastq.bam,BZ46,SSID,BelizeDiseased,NA,NA,90.38,NA,2,NA,NA,NA,Lagoon Reef,22,2,Belize,Belize
+32_S32_L001_R1_001_GTGA.nosymbio.fastq.bam,BZ44,SSID,BelizeDiseased,NA,NA,90.9,NA,2,NA,NA,NA,Lagoon Reef,20,2,Belize,Belize
+32_S32_L001_R1_001_TGGT.nosymbio.fastq.bam,BZ38,SSID,BelizeDiseased,NA,NA,88.04,NA,2,NA,NA,NA,cbc house reef,13,4,Belize,Belize
+33_S33_L001_R1_001_ACCA.nosymbio.fastq.bam,BZ53,SSID,BelizeDiseased,NA,NA,84.63,NA,2,NA,NA,NA,south reef 60 central,48,2,Belize,Belize
+33_S33_L001_R1_001_AGAC.nosymbio.fastq.bam,BZ52,SSID,BelizeDiseased,NA,NA,87.17,NA,2,NA,NA,NA,Lagoon Reef,20,4,Belize,Belize
+33_S33_L001_R1_001_AGTG.nosymbio.fastq.bam,BZ54,SSID,BelizeDiseased,NA,NA,89.75,NA,2,NA,NA,NA,south reef 60 central,46,2,Belize,Belize
+33_S33_L001_R1_001_CATC.nosymbio.fastq.bam,BZ55,SSID,BelizeDiseased,NA,NA,90.61,NA,2,NA,NA,NA,south reef 60 central,44,2,Belize,Belize
+33_S33_L001_R1_001_CTAC.nosymbio.fastq.bam,BZ59,SSID,BelizeDiseased,NA,NA,79.33,NA,2,NA,NA,NA,House reef,13,2,Belize,Belize
+33_S33_L001_R1_001_GCTT.nosymbio.fastq.bam,BZ58,SSID,BelizeDiseased,NA,NA,62.2,NA,2,y,NA,NA,south reef 60 central,45,2,Belize,Belize
+33_S33_L001_R1_001_GTGA.nosymbio.fastq.bam,BZ56,SSID,BelizeDiseased,NA,NA,90.43,NA,2,y,NA,NA,south reef 60 central,46,2,Belize,Belize
+33_S33_L001_R1_001_TCAC.nosymbio.fastq.bam,BZ33,SSID,BelizeDiseased,NA,NA,88.96,NA,2,NA,NA,NA,cbc house reef,11,4,Belize,Belize
+33_S33_L001_R1_001_TCAG.nosymbio.fastq.bam,BZ57,SSID,BelizeDiseased,NA,NA,90.36,NA,2,NA,NA,NA,south reef 60 central,44,2,Belize,Belize
+33_S33_L001_R1_001_TGGT.nosymbio.fastq.bam,BZ51,SSID,BelizeDiseased,NA,NA,86,NA,2,NA,NA,NA,Lagoon Reef,20,4,Belize,Belize
+7_S7_L001_R1_001_GACT.nosymbio.fastq.bam,SSID1,SSID,GenomeFLorida,NA,NA,94.59,NA,2,NA,NA,NA,FloridaKeys,NA,2,Curacao,Curacao

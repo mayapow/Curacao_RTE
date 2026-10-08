@@ -1,0 +1,114 @@
+bam,sample_id,species,location,reef_bay,gen_site,lineage,site
+16_S16_L001_R1_001_ACCA.nosymbio.fastq.bam,43,SSID,Curacao,Bay,NA,unknown,Bay
+16_S16_L001_R1_001_AGAC.nosymbio.fastq.bam,42,SSID,Curacao,Bay,NA,unknown,Bay
+16_S16_L001_R1_001_AGTG.nosymbio.fastq.bam,44,SSID,Curacao,Bay,NA,unknown,Bay
+16_S16_L001_R1_001_CATC.nosymbio.fastq.bam,45,SSID,Curacao,Bay,NA,unknown,Bay
+16_S16_L001_R1_001_CTAC.nosymbio.fastq.bam,49,SSID,Curacao,Bay,NA,unknown,Bay
+16_S16_L001_R1_001_GACT.nosymbio.fastq.bam,62,SSID,Curacao,Reef,NA,unknown,Reef
+16_S16_L001_R1_001_GCTT.nosymbio.fastq.bam,48,SSID,Curacao,Bay,NA,unknown,Bay
+16_S16_L001_R1_001_GTGA.nosymbio.fastq.bam,46,SSID,Curacao,Bay,NA,unknown,Bay
+16_S16_L001_R1_001_TCAC.nosymbio.fastq.bam,61,SSID,Curacao,Reef,NA,unknown,Reef
+16_S16_L001_R1_001_TGTC.nosymbio.fastq.bam,50,SSID,Curacao,Bay,NA,unknown,Bay
+17_S17_L001_R1_001_ACCA.nosymbio.fastq.bam,65A,SSID,Curacao,Reef,NA,unknown,Reef
+17_S17_L001_R1_001_AGAC.nosymbio.fastq.bam,64,SSID,Curacao,Reef,NA,unknown,Reef
+17_S17_L001_R1_001_AGTG.nosymbio.fastq.bam,66,SSID,Curacao,Reef,NA,unknown,Reef
+17_S17_L001_R1_001_CATC.nosymbio.fastq.bam,67,SSID,Curacao,Reef,NA,unknown,Reef
+17_S17_L001_R1_001_CTAC.nosymbio.fastq.bam,41B,SSID,Curacao,Bay,NA,unknown,Bay
+17_S17_L001_R1_001_GCTT.nosymbio.fastq.bam,70B,SSID,Curacao,Reef,NA,unknown,Reef
+17_S17_L001_R1_001_GTGA.nosymbio.fastq.bam,68,SSID,Curacao,Reef,NA,unknown,Reef
+17_S17_L001_R1_001_TCAC.nosymbio.fastq.bam,47B,SSID,Curacao,Bay,NA,unknown,Bay
+17_S17_L001_R1_001_TCAG.nosymbio.fastq.bam,69,SSID,Curacao,Reef,NA,unknown,Reef
+17_S17_L001_R1_001_TGGT.nosymbio.fastq.bam,63,SSID,Curacao,Reef,NA,unknown,Reef
+29_S29_L001_R1_001_ACCA.nosymbio.fastq.bam,BZ3,SSID,Belize,NA,NA,L2,cbc 30 South
+29_S29_L001_R1_001_AGAC.nosymbio.fastq.bam,BZ2,SSID,Belize,NA,NA,L2,cbc 30 South
+29_S29_L001_R1_001_AGTG.nosymbio.fastq.bam,BZ4,SSID,Belize,NA,NA,L2,cbc 30 South
+29_S29_L001_R1_001_CATC.nosymbio.fastq.bam,BZ5,SSID,Belize,NA,NA,L2,cbc 30 South
+29_S29_L001_R1_001_CTAC.nosymbio.fastq.bam,BZ9,SSID,Belize,NA,NA,L2,cbc 30 South
+29_S29_L001_R1_001_GACT.nosymbio.fastq.bam,BZ12,SSID,Belize,NA,NA,L2,cbc 30 South
+29_S29_L001_R1_001_TCAG.nosymbio.fastq.bam,BZ7,SSID,Belize,NA,NA,L2,cbc 30 South
+29_S29_L001_R1_001_TGGT.nosymbio.fastq.bam,BZ1,SSID,Belize,NA,NA,L4,cbc 30 South
+29_S29_L001_R1_001_TGTC.nosymbio.fastq.bam,BZ10,SSID,Belize,NA,NA,L2,cbc 30 South
+30_S30_L001_R1_001_ACCA.nosymbio.fastq.bam,BZ15,SSID,Belize,NA,NA,L2,cbc 30 South
+30_S30_L001_R1_001_AGAC.nosymbio.fastq.bam,BZ14,SSID,Belize,NA,NA,L2,cbc 30 South
+30_S30_L001_R1_001_AGTG.nosymbio.fastq.bam,BZ16,SSID,Belize,NA,NA,L2,cbc 30 South
+30_S30_L001_R1_001_CATC.nosymbio.fastq.bam,BZ17,SSID,Belize,NA,NA,L2,cbc 30 South
+30_S30_L001_R1_001_CTAC.nosymbio.fastq.bam,BZ21,SSID,Belize,NA,NA,L2,south reef 30 North
+30_S30_L001_R1_001_GCTT.nosymbio.fastq.bam,BZ20,SSID,Belize,NA,18,L2,south reef 30 North
+30_S30_L001_R1_001_GTGA.nosymbio.fastq.bam,BZ18,SSID,Belize,NA,NA,L2,cbc 30 South
+30_S30_L001_R1_001_TGTC.nosymbio.fastq.bam,BZ22,SSID,Belize,NA,NA,L2,south reef 30 North
+31_S31_L001_R1_001_ACCA.nosymbio.fastq.bam,BZ27,SSID,Belize,NA,NA,L2,south reef 30 North
+31_S31_L001_R1_001_AGAC.nosymbio.fastq.bam,BZ26,SSID,Belize,NA,NA,L2,south reef 30 North
+31_S31_L001_R1_001_AGTG.nosymbio.fastq.bam,BZ28,SSID,Belize,NA,NA,L4,south reef 30 North
+31_S31_L001_R1_001_CATC.nosymbio.fastq.bam,BZ29,SSID,Belize,NA,NA,L2,south reef 30 North
+31_S31_L001_R1_001_CTAC.nosymbio.fastq.bam,BZ34,SSID,Belize,NA,NA,L4,cbc house reef
+31_S31_L001_R1_001_GTGA.nosymbio.fastq.bam,BZ31,SSID,Belize,NA,NA,L2,south reef 30 North
+31_S31_L001_R1_001_TCAC.nosymbio.fastq.bam,BZ23,SSID,Belize,NA,NA,L2,south reef 30 North
+31_S31_L001_R1_001_TGGT.nosymbio.fastq.bam,BZ25,SSID,Belize,NA,NA,L4,south reef 30 North
+32_S32_L001_R1_001_ACCA.nosymbio.fastq.bam,BZ41,SSID,Belize,NA,NA,L4,Lagoon Reef
+32_S32_L001_R1_001_AGAC.nosymbio.fastq.bam,BZ40,SSID,Belize,NA,NA,L2,Lagoon Reef
+32_S32_L001_R1_001_AGTG.nosymbio.fastq.bam,BZ42,SSID,Belize,NA,NA,L2,Lagoon Reef
+32_S32_L001_R1_001_CATC.nosymbio.fastq.bam,BZ43,SSID,Belize,NA,NA,L4,Lagoon Reef
+32_S32_L001_R1_001_CTAC.nosymbio.fastq.bam,BZ47,SSID,Belize,NA,NA,L2,Lagoon Reef
+32_S32_L001_R1_001_GCTT.nosymbio.fastq.bam,BZ46,SSID,Belize,NA,NA,L2,Lagoon Reef
+32_S32_L001_R1_001_GTGA.nosymbio.fastq.bam,BZ44,SSID,Belize,NA,NA,L2,Lagoon Reef
+32_S32_L001_R1_001_TGGT.nosymbio.fastq.bam,BZ38,SSID,Belize,NA,NA,L4,cbc house reef
+33_S33_L001_R1_001_ACCA.nosymbio.fastq.bam,BZ53,SSID,Belize,NA,NA,L2,south reef 60 central
+33_S33_L001_R1_001_AGAC.nosymbio.fastq.bam,BZ52,SSID,Belize,NA,NA,L4,Lagoon Reef
+33_S33_L001_R1_001_AGTG.nosymbio.fastq.bam,BZ54,SSID,Belize,NA,NA,L2,south reef 60 central
+33_S33_L001_R1_001_CATC.nosymbio.fastq.bam,BZ55,SSID,Belize,NA,NA,L2,south reef 60 central
+33_S33_L001_R1_001_CTAC.nosymbio.fastq.bam,BZ59,SSID,Belize,NA,NA,L2,House reef
+33_S33_L001_R1_001_GCTT.nosymbio.fastq.bam,BZ58,SSID,Belize,NA,NA,L2,south reef 60 central
+33_S33_L001_R1_001_GTGA.nosymbio.fastq.bam,BZ56,SSID,Belize,NA,NA,L2,south reef 60 central
+33_S33_L001_R1_001_TCAC.nosymbio.fastq.bam,BZ33,SSID,Belize,NA,NA,L4,cbc house reef
+33_S33_L001_R1_001_TCAG.nosymbio.fastq.bam,BZ57,SSID,Belize,NA,NA,L2,south reef 60 central
+33_S33_L001_R1_001_TGGT.nosymbio.fastq.bam,BZ51,SSID,Belize,NA,NA,L4,Lagoon Reef
+SRR24593955.fastq.bam,I4I,SSID,Panama,Inner Reef,I4I,L2,PD
+SRR24593956.fastq.bam,O3B,SSID,Panama,Outer Reef,O3B,L1,CA
+SRR24593959.fastq.bam,O2A,SSID,Panama,Outer Reef,O2A,L1,BS
+SRR24593965.fastq.bam,I4E,SSID,Panama,Inner Reef,I4E,L2,PD
+SRR24593967.fastq.bam,O4H,SSID,Panama,Outer Reef,O4H,L1,BN
+SRR24593968.fastq.bam,I4D,SSID,Panama,Inner Reef,I4D,L2,PD
+SRR24593969.fastq.bam,I2F,SSID,Panama,Inner Reef,I2F,L2,SP
+SRR24593970.fastq.bam,O3D,SSID,Panama,Outer Reef,O3D,L1,CA
+SRR24593971.fastq.bam,I3G,SSID,Panama,Inner Reef,I3G,L2,CI
+SRR24593972.fastq.bam,I2G,SSID,Panama,Inner Reef,I2G,L2,SP
+SRR24593973.fastq.bam,O2G,SSID,Panama,Outer Reef,O2G,L2,BS
+SRR24593974.fastq.bam,I3E,SSID,Panama,Inner Reef,I3E,L2,CI
+SRR24593977.fastq.bam,I2C,SSID,Panama,Inner Reef,I2C,L2,SP
+SRR24593978.fastq.bam,O4B,SSID,Panama,Outer Reef,O4B,L1,BN
+SRR24593980.fastq.bam,O2F,SSID,Panama,Outer Reef,O2F,L1,BS
+SRR24593981.fastq.bam,O2H,SSID,Panama,Outer Reef,O2H,L1,BS
+SRR24593982.fastq.bam,I2D,SSID,Panama,Inner Reef,I2D,L3,SP
+SRR24593983.fastq.bam,I4C,SSID,Panama,Inner Reef,I4C,L2,PD
+SRR24593984.fastq.bam,I4B,SSID,Panama,Inner Reef,I4B,L2,PD
+SRR24593985.fastq.bam,I2I,SSID,Panama,Inner Reef,I2I,L3,SP
+SRR24593986.fastq.bam,O3I,SSID,Panama,Outer Reef,O3I,L1,CA
+SRR24593987.fastq.bam,I3H,SSID,Panama,Inner Reef,I3H,L1,CI
+SRR24593988.fastq.bam,O2E,SSID,Panama,Outer Reef,O2E,L1,BS
+SRR24593989.fastq.bam,O4E,SSID,Panama,Outer Reef,O4E,L1,BN
+SRR24593990.fastq.bam,O2D,SSID,Panama,Outer Reef,O2D,L1,BS
+SRR24593991.fastq.bam,O3C,SSID,Panama,Outer Reef,O3C,L1,CA
+SRR24593992.fastq.bam,I4A,SSID,Panama,Inner Reef,I4A,L1,PD
+SRR24593993.fastq.bam,O4F,SSID,Panama,Outer Reef,O4F,L1,BN
+SRR24593994.fastq.bam,O3G,SSID,Panama,Outer Reef,O3G,L1,CA
+SRR24593995.fastq.bam,O2C,SSID,Panama,Outer Reef,O2C,L1,BS
+SRR24593996.fastq.bam,O2B,SSID,Panama,Outer Reef,O2B,L1,BS
+SRR24593997.fastq.bam,I4F,SSID,Panama,Inner Reef,I4F,L2,PD
+SRR24593998.fastq.bam,I4H,SSID,Panama,Inner Reef,I4H,L2,PD
+SRR24593999.fastq.bam,I3A,SSID,Panama,Inner Reef,I3A,L1,CI
+SRR24594000.fastq.bam,O3E,SSID,Panama,Outer Reef,O3E,L1,CA
+SRR24594001.fastq.bam,O4G,SSID,Panama,Outer Reef,O4G,L1,BN
+SRR24594002.fastq.bam,I3D,SSID,Panama,Inner Reef,I3D,L2,CI
+SRR24594003.fastq.bam,I3I,SSID,Panama,Inner Reef,I3I,L1,CI
+SRR24594004.fastq.bam,O4D,SSID,Panama,Outer Reef,O4D,L1,BN
+SRR24594005.fastq.bam,I2A,SSID,Panama,Inner Reef,I2A,L2,SP
+SRR24594006.fastq.bam,I3F,SSID,Panama,Inner Reef,I3F,L1,CI
+SRR24594007.fastq.bam,I2B,SSID,Panama,Inner Reef,I2B,L2,SP
+SRR24594008.fastq.bam,O4C,SSID,Panama,Outer Reef,O4C,L1,BN
+SRR24594009.fastq.bam,O4A,SSID,Panama,Outer Reef,O4A,L1,BN
+SRR24594010.fastq.bam,O3F,SSID,Panama,Outer Reef,O3F,L1,CA
+SRR24594011.fastq.bam,O3H,SSID,Panama,Outer Reef,O3H,L1,CA
+SRR24594012.fastq.bam,O2I,SSID,Panama,Outer Reef,O2I,L1,BS
+SRR24594013.fastq.bam,I2E,SSID,Panama,Inner Reef,I2E,L2,SP
+SRR24594014.fastq.bam,I2H,SSID,Panama,Inner Reef,I2H,L3,SP
+SRR24594015.fastq.bam,I3C,SSID,Panama,Inner Reef,I3C,L2,CI
