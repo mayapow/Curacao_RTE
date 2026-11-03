@@ -1,0 +1,292 @@
+response,species,model,n_obs,df,AIC,singular,core_term,time_mode,site_structure,has_sym,site_sym_int,deltaAIC,weight
+chla,Siderastrea siderea,site_add_tp,79,10,390.7131055201455,FALSE,native_site + transplant_site,interactive,additive,FALSE,FALSE,0,0.43021910112519907
+chla,Siderastrea siderea,native_tp,79,8,391.609578227691,FALSE,native_site,interactive,native,FALSE,FALSE,0.8964727075454562,0.2748040402209148
+chla,Siderastrea siderea,site_int_tp,79,12,393.33001528747144,FALSE,native_site * transplant_site,interactive,interactive,FALSE,FALSE,2.6169097673259216,0.11626124055682732
+chla,Siderastrea siderea,transplant_tp,79,8,394.85787458469963,FALSE,transplant_site,interactive,transplant,FALSE,FALSE,4.1447690645541115,0.05415823742055669
+chla,Siderastrea siderea,site_add_sym_add_tp,79,15,395.2576143063031,FALSE,native_site + transplant_site + sym_dom_b4,interactive,additive,TRUE,FALSE,4.544508786157564,0.044346785388288
+chla,Siderastrea siderea,transplant_sym_tp,79,14,396.9204106865993,FALSE,transplant_site + sym_dom_b4,interactive,transplant,TRUE,FALSE,6.207305166453807,0.019310365672116244
+chla,Siderastrea siderea,native_sym_tp,79,13,397.3901719336228,FALSE,native_site + sym_dom_b4,interactive,native,TRUE,FALSE,6.6770664134772915,0.015268034731629257
+chla,Siderastrea siderea,site_int_sym_add_tp,79,17,397.8155203345324,FALSE,native_site * transplant_site + sym_dom_b4,interactive,interactive,TRUE,FALSE,7.1024148143868615,0.012342976652777143
+chla,Siderastrea siderea,transplant_sym,79,8,399.1110929701938,FALSE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,8.397987450048277,0.006457878713813545
+chla,Siderastrea siderea,transplant,79,6,399.8376098734689,FALSE,transplant_site,additive,transplant,FALSE,FALSE,9.124504353323402,0.004490852004455481
+chla,Siderastrea siderea,transplant_sym_int,79,10,400.1861662395159,FALSE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,9.47306071937038,0.003772599388096558
+chla,Siderastrea siderea,sym_tp,79,11,400.52302524517074,FALSE,sym_dom_b4,interactive,none,TRUE,FALSE,9.809919725025225,0.003187811891161679
+chla,Siderastrea siderea,site_add_sym_add,79,9,400.65985014918823,FALSE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,9.946744629042712,0.0029770185165895083
+chla,Siderastrea siderea,sym,79,7,400.73595457331254,FALSE,sym_dom_b4,additive,none,TRUE,FALSE,10.022849053167022,0.0028658646145856737
+chla,Siderastrea siderea,site_add,79,7,401.257652100289,FALSE,native_site + transplant_site,additive,additive,FALSE,FALSE,10.544546580143503,0.002207854713812469
+chla,Siderastrea siderea,site_int,79,8,402.16298871889325,FALSE,native_site * transplant_site,additive,interactive,FALSE,FALSE,11.449883198747727,0.0014040389074014593
+chla,Siderastrea siderea,native_sym,79,8,402.18132915888475,FALSE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,11.468223638739232,0.0013912224165727963
+chla,Siderastrea siderea,site_int_sym_add,79,10,402.284375846229,FALSE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,11.571270326083493,0.0013213572834788567
+chla,Siderastrea siderea,null,79,5,403.12679879366044,FALSE,1,additive,none,FALSE,FALSE,12.413693273514923,8.671424440745681e-4
+chla,Siderastrea siderea,site_add_sym_int,79,12,403.37700901677374,FALSE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,12.663903496628222,7.651700885492171e-4
+chla,Siderastrea siderea,native,79,6,403.57073148530634,FALSE,native_site,additive,native,FALSE,FALSE,12.857625965160821,6.945310800046536e-4
+chla,Siderastrea siderea,native_sym_int,79,9,403.91794954649976,FALSE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,13.204844026354237,5.838405310230389e-4
+chla,Siderastrea siderea,site_int_sym_int,79,13,405.2361152763982,FALSE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,14.52300975625269,3.02035638072053e-4
+chla_sym,Siderastrea siderea,site_add,77,7,314.98880285353744,TRUE,native_site + transplant_site,additive,additive,FALSE,FALSE,0,0.25854790850382947
+chla_sym,Siderastrea siderea,site_add_tp,77,10,316.0958930903637,FALSE,native_site + transplant_site,interactive,additive,FALSE,FALSE,1.1070902368262523,0.14864128068794263
+chla_sym,Siderastrea siderea,transplant,77,6,316.61757774856835,FALSE,transplant_site,additive,transplant,FALSE,FALSE,1.628774895030915,0.11451359641927865
+chla_sym,Siderastrea siderea,site_int,77,8,316.8745660953988,TRUE,native_site * transplant_site,additive,interactive,FALSE,FALSE,1.8857632418613548,0.10070539653924392
+chla_sym,Siderastrea siderea,transplant_sym,77,8,317.327380886027,TRUE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,2.338578032489579,0.08030179651437244
+chla_sym,Siderastrea siderea,transplant_tp,77,8,317.82547643084894,FALSE,transplant_site,interactive,transplant,FALSE,FALSE,2.836673577311501,0.06259868182803159
+chla_sym,Siderastrea siderea,site_add_sym_add,77,9,318.24756027117655,TRUE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,3.258757417639117,0.05068866424364566
+chla_sym,Siderastrea siderea,sym,77,7,319.03037481633345,TRUE,sym_dom_b4,additive,none,TRUE,FALSE,4.041571962796013,0.03427084621198299
+chla_sym,Siderastrea siderea,native,77,6,319.0522878648666,TRUE,native_site,additive,native,FALSE,FALSE,4.063485011329192,0.03389740639086029
+chla_sym,Siderastrea siderea,site_int_tp,77,12,320.01770115824576,FALSE,native_site * transplant_site,interactive,interactive,FALSE,FALSE,5.028898304708321,0.02091845653601578
+chla_sym,Siderastrea siderea,native_sym,77,8,320.07880126473077,TRUE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,5.089998411193335,0.020289059581217773
+chla_sym,Siderastrea siderea,native_tp,77,8,320.10673741502046,TRUE,native_site,interactive,native,FALSE,FALSE,5.117934561483025,0.02000763055895358
+chla_sym,Siderastrea siderea,site_int_sym_add,77,10,320.1958656116326,TRUE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,5.207062758095162,0.01913558384750533
+chla_sym,Siderastrea siderea,transplant_sym_int,77,10,321.02246947959367,TRUE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,6.033666626056231,0.012657471793930073
+chla_sym,Siderastrea siderea,native_sym_int,77,9,322.0678541207503,TRUE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,7.07905126721289,0.00750489426120907
+chla_sym,Siderastrea siderea,transplant_sym_tp,77,14,323.3114163850695,FALSE,transplant_site + sym_dom_b4,interactive,transplant,TRUE,FALSE,8.322613531532056,0.0040300317071785205
+chla_sym,Siderastrea siderea,site_add_sym_int,77,12,323.80895758044176,TRUE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,8.82015472690432,0.0031424528142884184
+chla_sym,Siderastrea siderea,null,77,5,323.96011238861433,FALSE,1,additive,none,FALSE,FALSE,8.971309535076898,0.002913707257272401
+chla_sym,Siderastrea siderea,site_add_sym_add_tp,77,15,324.83029980100065,FALSE,native_site + transplant_site + sym_dom_b4,interactive,additive,TRUE,FALSE,9.841496947463213,0.0018857630418858617
+chla_sym,Siderastrea siderea,sym_tp,77,11,325.13385822815775,TRUE,sym_dom_b4,interactive,none,TRUE,FALSE,10.145055374620313,0.0016202060332398812
+chla_sym,Siderastrea siderea,site_int_sym_int,77,13,325.8083069277317,TRUE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,10.819504074194242,0.0011564199379218382
+chla_sym,Siderastrea siderea,native_sym_tp,77,13,328.5672580689291,TRUE,native_site + sym_dom_b4,interactive,native,TRUE,FALSE,13.57845521539167,2.9108306720975255e-4
+chla_sym,Siderastrea siderea,site_int_sym_add_tp,77,17,328.6330583061074,FALSE,native_site * transplant_site + sym_dom_b4,interactive,interactive,TRUE,FALSE,13.64425545256995,2.816622229841729e-4
+dry_weight,Siderastrea siderea,site_add,79,7,712.565099301447,FALSE,native_site + transplant_site,additive,additive,FALSE,FALSE,0,0.15661196021163962
+dry_weight,Siderastrea siderea,native,79,6,712.7506419121868,TRUE,native_site,additive,native,FALSE,FALSE,0.18554261073973066,0.14273643953836934
+dry_weight,Siderastrea siderea,site_add_tp,79,10,712.8740606536123,FALSE,native_site + transplant_site,interactive,additive,FALSE,FALSE,0.30896135216528364,0.13419453203795254
+dry_weight,Siderastrea siderea,site_int_tp,79,12,713.2696115728191,FALSE,native_site * transplant_site,interactive,interactive,FALSE,FALSE,0.7045122713720957,0.11011387077641543
+dry_weight,Siderastrea siderea,site_add_sym_add_tp,79,15,713.6927688488124,FALSE,native_site + transplant_site + sym_dom_b4,interactive,additive,TRUE,FALSE,1.1276695473653717,0.0891157762625757
+dry_weight,Siderastrea siderea,site_int_sym_add_tp,79,17,714.4879179867871,FALSE,native_site * transplant_site + sym_dom_b4,interactive,interactive,TRUE,FALSE,1.9228186853400757,0.059881152862473565
+dry_weight,Siderastrea siderea,site_int,79,8,714.5488801611182,FALSE,native_site * transplant_site,additive,interactive,FALSE,FALSE,1.9837808596711284,0.05808344741540614
+dry_weight,Siderastrea siderea,site_add_sym_int,79,12,715.0858194147686,FALSE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,2.520720113321545,0.044407620973467614
+dry_weight,Siderastrea siderea,native_sym_int,79,9,715.0969327770351,TRUE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,2.531833475588087,0.0441615462962533
+dry_weight,Siderastrea siderea,site_add_sym_add,79,9,715.1917166965868,FALSE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,2.6266173951397604,0.042117463192199764
+dry_weight,Siderastrea siderea,native_sym,79,8,715.8904704962729,FALSE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,3.325371194825834,0.029698173853481842
+dry_weight,Siderastrea siderea,native_tp,79,8,716.6242976902913,TRUE,native_site,interactive,native,FALSE,FALSE,4.0591983888442655,0.020576959119900404
+dry_weight,Siderastrea siderea,transplant_tp,79,8,716.6702327772526,FALSE,transplant_site,interactive,transplant,FALSE,FALSE,4.105133475805587,0.02010974285968114
+dry_weight,Siderastrea siderea,site_int_sym_add,79,10,717.0283183458062,FALSE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,4.463219044359107,0.016813155286259426
+dry_weight,Siderastrea siderea,site_int_sym_int,79,13,717.0596008102963,FALSE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,4.4945015088492255,0.016552222792223764
+dry_weight,Siderastrea siderea,transplant,79,6,718.7987741832164,FALSE,transplant_site,additive,transplant,FALSE,FALSE,6.233674881769389,0.006937446130238628
+dry_weight,Siderastrea siderea,null,79,5,720.8506548696099,FALSE,1,additive,none,FALSE,FALSE,8.285555568162863,0.0024867916130871083
+dry_weight,Siderastrea siderea,sym,79,7,721.9093571083897,FALSE,sym_dom_b4,additive,none,TRUE,FALSE,9.344257806942665,0.0014646880013776018
+dry_weight,Siderastrea siderea,transplant_sym,79,8,721.9503002006163,FALSE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,9.385200899169263,0.0014350084035571439
+dry_weight,Siderastrea siderea,transplant_sym_tp,79,14,722.3464568311842,FALSE,transplant_site + sym_dom_b4,interactive,transplant,TRUE,FALSE,9.781357529737193,0.001177145441188255
+dry_weight,Siderastrea siderea,transplant_sym_int,79,10,722.6931049150492,FALSE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,10.128005613602113,9.898205134015977e-4
+dry_weight,Siderastrea siderea,native_sym_tp,79,13,725.1999760758079,FALSE,native_site + sym_dom_b4,interactive,native,TRUE,FALSE,12.634876774360805,2.8261570634623617e-4
+dry_weight,Siderastrea siderea,sym_tp,79,11,728.5695485892066,FALSE,sym_dom_b4,interactive,none,TRUE,FALSE,16.0044492877596,5.242071250395759e-5
+sym_density,Siderastrea siderea,transplant_sym_int,77,10,127.56470585902531,FALSE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,0,0.2912325041563514
+sym_density,Siderastrea siderea,site_add_sym_int,77,12,128.09254938288393,FALSE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,0.5278435238586212,0.22367635640205777
+sym_density,Siderastrea siderea,site_int_sym_int,77,13,130.02269020315003,FALSE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,2.457984344124725,0.08521093404366362
+sym_density,Siderastrea siderea,native_sym,77,8,130.56855529835076,FALSE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,3.0038494393254496,0.06485780199459441
+sym_density,Siderastrea siderea,sym,77,7,130.62126102529862,FALSE,sym_dom_b4,additive,none,TRUE,FALSE,3.056555166273313,0.06317093766846
+sym_density,Siderastrea siderea,site_add_sym_add,77,9,130.9142284993864,FALSE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,3.3495226403611014,0.054563251752516966
+sym_density,Siderastrea siderea,transplant_sym,77,8,131.05544781086422,FALSE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,3.4907419518389133,0.05084343228707276
+sym_density,Siderastrea siderea,site_int_sym_add,77,10,131.7977621905975,FALSE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,4.233056331572186,0.035078687970068995
+sym_density,Siderastrea siderea,native_sym_int,77,9,132.074484287397,FALSE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,4.509778428371703,0.030545968634627607
+sym_density,Siderastrea siderea,transplant,77,6,133.01473206089102,FALSE,transplant_site,additive,transplant,FALSE,FALSE,5.450026201865711,0.019088934671020498
+sym_density,Siderastrea siderea,native_sym_tp,77,13,133.18468985725127,FALSE,native_site + sym_dom_b4,interactive,native,TRUE,FALSE,5.619983998225962,0.017533790982464496
+sym_density,Siderastrea siderea,site_int,77,8,133.5907209320107,FALSE,native_site * transplant_site,additive,interactive,FALSE,FALSE,6.026015072985388,0.014312229692415497
+sym_density,Siderastrea siderea,site_add,77,7,133.79203649031447,FALSE,native_site + transplant_site,additive,additive,FALSE,FALSE,6.227330631289163,0.012941725363704915
+sym_density,Siderastrea siderea,sym_tp,77,11,134.33530794241,FALSE,sym_dom_b4,interactive,none,TRUE,FALSE,6.770602083384688,0.009863300903466805
+sym_density,Siderastrea siderea,site_add_sym_add_tp,77,15,135.23490056137348,FALSE,native_site + transplant_site + sym_dom_b4,interactive,additive,TRUE,FALSE,7.670194702348169,0.006290399488213782
+sym_density,Siderastrea siderea,native,77,6,135.6089212290342,FALSE,native_site,additive,native,FALSE,FALSE,8.044215370008885,0.005217478538044181
+sym_density,Siderastrea siderea,null,77,5,136.13149800305212,FALSE,1,additive,none,FALSE,FALSE,8.566792144026806,0.004017765327942039
+sym_density,Siderastrea siderea,transplant_sym_tp,77,14,136.45600866491404,FALSE,transplant_site + sym_dom_b4,interactive,transplant,TRUE,FALSE,8.891302805888728,0.0034160008630138355
+sym_density,Siderastrea siderea,transplant_tp,77,8,136.6906610131149,FALSE,transplant_site,interactive,transplant,FALSE,FALSE,9.125955154089581,0.0030378327635872406
+sym_density,Siderastrea siderea,site_int_sym_add_tp,77,17,137.1233922354856,FALSE,native_site * transplant_site + sym_dom_b4,interactive,interactive,TRUE,FALSE,9.558686376460287,0.0024467943598705704
+sym_density,Siderastrea siderea,native_tp,77,8,138.65416869238038,FALSE,native_site,interactive,native,FALSE,FALSE,11.089462833355071,0.001138134495794454
+sym_density,Siderastrea siderea,site_add_tp,77,10,138.78709738909924,FALSE,native_site + transplant_site,interactive,additive,FALSE,FALSE,11.222391530073935,0.0010649482074456416
+sym_density,Siderastrea siderea,site_int_tp,77,12,140.5064595946539,FALSE,native_site * transplant_site,interactive,interactive,FALSE,FALSE,12.941753735628595,4.5078943360245824e-4
+calcification,Siderastrea siderea,native_sym_int_tp,59,10,42.39259779362695,FALSE,native_site * sym_dom_b4,interactive,native,TRUE,TRUE,0,0.48573078130608144
+calcification,Siderastrea siderea,site_add_sym_int,59,11,44.78710204113008,FALSE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,2.3945042475031357,0.14670186509466943
+calcification,Siderastrea siderea,site_add_sym_int_tp,59,14,44.89623526154695,FALSE,(native_site + transplant_site) * sym_dom_b4,interactive,additive,TRUE,TRUE,2.503637467920001,0.13891132619614235
+calcification,Siderastrea siderea,site_int_sym_int_tp,59,15,46.56442035912454,FALSE,native_site * transplant_site * sym_dom_b4,interactive,interactive,TRUE,TRUE,4.1718225654975924,0.06032479659800936
+calcification,Siderastrea siderea,site_int_sym_int,59,12,46.7678784494029,FALSE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,4.375280655775953,0.054489836312383806
+calcification,Siderastrea siderea,site_int,59,7,47.54414964029099,FALSE,native_site * transplant_site,additive,interactive,FALSE,FALSE,5.1515518466640415,0.03696156537708656
+calcification,Siderastrea siderea,site_int_tp,59,10,49.34717894756958,FALSE,native_site * transplant_site,interactive,interactive,FALSE,FALSE,6.954581153942634,0.01500470690451269
+calcification,Siderastrea siderea,site_int_sym_add,59,9,49.941286320304215,FALSE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,7.548688526677267,0.01114855908093952
+calcification,Siderastrea siderea,native_sym_int,59,8,50.01631632859085,FALSE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,7.623718534963899,0.010738068755660468
+calcification,Siderastrea siderea,transplant_tp,59,6,50.844764584270436,FALSE,transplant_site,interactive,transplant,FALSE,FALSE,8.452166790643489,0.007096283009420736
+calcification,Siderastrea siderea,transplant,59,5,51.1248603530524,FALSE,transplant_site,additive,transplant,FALSE,FALSE,8.73226255942545,0.006168916673070123
+calcification,Siderastrea siderea,site_add,59,6,51.42536499214233,FALSE,native_site + transplant_site,additive,additive,FALSE,FALSE,9.03276719851538,0.005308296230532601
+calcification,Siderastrea siderea,site_add_tp,59,8,51.599070023859035,FALSE,native_site + transplant_site,interactive,additive,FALSE,FALSE,9.206472230232087,0.004866711281174271
+calcification,Siderastrea siderea,site_int_sym_add_tp,59,13,52.0822512344934,FALSE,native_site * transplant_site + sym_dom_b4,interactive,interactive,TRUE,FALSE,9.68965344086645,0.0038222062262878854
+calcification,Siderastrea siderea,transplant_sym,59,7,52.20116814601779,FALSE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,9.808570352390845,0.00360156814441757
+calcification,Siderastrea siderea,site_add_sym_add,59,8,53.30410321075057,FALSE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,10.911505417123621,0.0020748768736518204
+calcification,Siderastrea siderea,sym_tp,59,8,54.223982464232975,FALSE,sym_dom_b4,interactive,none,TRUE,FALSE,11.831384670606027,0.0013099149182220682
+calcification,Siderastrea siderea,transplant_sym_tp,59,10,54.312967555512344,FALSE,transplant_site + sym_dom_b4,interactive,transplant,TRUE,FALSE,11.920369761885397,0.0012529109970932438
+calcification,Siderastrea siderea,transplant_sym_int,59,9,54.52035890997136,FALSE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,12.12776111634441,0.0011294987658939013
+calcification,Siderastrea siderea,native_sym_tp,59,9,55.60116573052516,FALSE,native_site + sym_dom_b4,interactive,native,TRUE,FALSE,13.208567936898213,6.579479553720095e-4
+calcification,Siderastrea siderea,sym,59,6,55.74180378031014,FALSE,sym_dom_b4,additive,none,TRUE,FALSE,13.349205986683195,6.132709275051805e-4
+calcification,Siderastrea siderea,site_add_sym_add_tp,59,11,55.79091823053171,FALSE,native_site + transplant_site + sym_dom_b4,interactive,additive,TRUE,FALSE,13.398320436904761,5.983941095913867e-4
+calcification,Siderastrea siderea,transplant_sym_int_tp,59,12,56.08430451092937,FALSE,transplant_site * sym_dom_b4,interactive,transplant,TRUE,TRUE,13.691706717302424,5.167485759701281e-4
+calcification,Siderastrea siderea,native_sym,59,7,56.5941293379064,FALSE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,14.201531544279455,4.004720712327682e-4
+calcification,Siderastrea siderea,null,59,4,57.52429972858531,FALSE,1,additive,none,FALSE,FALSE,15.131701934958365,2.5152913656627945e-4
+calcification,Siderastrea siderea,native,59,5,58.15670016991878,FALSE,native_site,additive,native,FALSE,FALSE,15.76410237629183,1.8334298127699585e-4
+calcification,Siderastrea siderea,native_tp,59,6,58.75991756702214,FALSE,native_site,interactive,native,FALSE,FALSE,16.367319773395195,1.356054972354924e-4
+pct_change_dw,Siderastrea siderea,transplant,37,4,-54.39300804744739,FALSE,transplant_site,additive,transplant,FALSE,FALSE,0,0.30383181399147896
+pct_change_dw,Siderastrea siderea,site_int,37,6,-53.327510795925065,FALSE,native_site * transplant_site,additive,interactive,FALSE,FALSE,1.0654972515223236,0.17834603484122202
+pct_change_dw,Siderastrea siderea,site_int_sym_add,37,8,-53.03778648629002,FALSE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,1.3552215611573715,0.15429456332196737
+pct_change_dw,Siderastrea siderea,site_add,37,5,-52.42044243392748,FALSE,native_site + transplant_site,additive,additive,FALSE,FALSE,1.9725656135199117,0.11331726031125758
+pct_change_dw,Siderastrea siderea,transplant_sym,37,6,-51.47850119837663,FALSE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,2.9145068490707615,0.07075483548928309
+pct_change_dw,Siderastrea siderea,transplant_sym_int,37,6,-51.47850119837663,FALSE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,2.9145068490707615,0.07075483548928309
+pct_change_dw,Siderastrea siderea,site_int_sym_int,37,9,-51.043836076619044,FALSE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,3.349171970828344,0.0569337504717867
+pct_change_dw,Siderastrea siderea,site_add_sym_add,37,7,-49.494425204319086,FALSE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,4.8985828431283025,0.026237321537083597
+pct_change_dw,Siderastrea siderea,site_add_sym_int,37,8,-49.05967477223881,FALSE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,5.333333275208581,0.021111283640956297
+pct_change_dw,Siderastrea siderea,sym,37,5,-44.79408245301002,FALSE,sym_dom_b4,additive,none,TRUE,FALSE,9.598925594437368,0.0025018025889748737
+pct_change_dw,Siderastrea siderea,native_sym,37,6,-42.90798617773266,FALSE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,11.485021869714728,9.742994003721123e-4
+pct_change_dw,Siderastrea siderea,native_sym_int,37,7,-42.46884476297299,FALSE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,11.924163284474396,7.822293168461412e-4
+pct_change_dw,Siderastrea siderea,null,37,3,-38.615192246105195,TRUE,1,additive,none,FALSE,FALSE,15.777815801342193,1.1390009256877929e-4
+pct_change_dw,Siderastrea siderea,native,37,4,-36.80485143182942,TRUE,native_site,additive,native,FALSE,FALSE,17.58815661561797,4.6069506919429456e-5
+pct_change_sa,Siderastrea siderea,site_add,35,5,50.05357077298401,TRUE,native_site + transplant_site,additive,additive,FALSE,FALSE,0,0.3252869681076701
+pct_change_sa,Siderastrea siderea,site_add_sym_add,35,7,50.961322534521656,TRUE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,0.9077517615376465,0.20660977945067294
+pct_change_sa,Siderastrea siderea,site_int,35,6,52.04707222667648,TRUE,native_site * transplant_site,additive,interactive,FALSE,FALSE,1.993501453692467,0.1200558492201066
+pct_change_sa,Siderastrea siderea,site_add_sym_int,35,8,52.71439392962266,TRUE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,2.6608231566386493,0.08599560525027575
+pct_change_sa,Siderastrea siderea,site_int_sym_add,35,8,52.96078077985616,TRUE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,2.9072100068721483,0.07602808169984288
+pct_change_sa,Siderastrea siderea,transplant,35,4,54.1007965984185,TRUE,transplant_site,additive,transplant,FALSE,FALSE,4.047225825434488,0.042995474192148636
+pct_change_sa,Siderastrea siderea,native_sym,35,6,54.11809450299697,TRUE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,4.064523730012958,0.04262521188581919
+pct_change_sa,Siderastrea siderea,site_int_sym_int,35,9,54.61667580772688,TRUE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,4.563105034742868,0.033220104642152644
+pct_change_sa,Siderastrea siderea,transplant_sym,35,6,55.367495267265696,TRUE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,5.313924494281686,0.022822468800024545
+pct_change_sa,Siderastrea siderea,transplant_sym_int,35,6,55.367495267265696,TRUE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,5.313924494281686,0.022822468800024545
+pct_change_sa,Siderastrea siderea,native_sym_int,35,7,56.01353802088088,TRUE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,5.95996724789687,0.016522517500892554
+pct_change_sa,Siderastrea siderea,sym,35,5,58.66130650063019,TRUE,sym_dom_b4,additive,none,TRUE,FALSE,8.60773572764618,0.004396636899759701
+pct_change_sa,Siderastrea siderea,native,35,4,63.536594205738375,TRUE,native_site,additive,native,FALSE,FALSE,13.483023432754365,3.841185904209677e-4
+pct_change_sa,Siderastrea siderea,null,35,3,64.5217531888479,TRUE,1,additive,none,FALSE,FALSE,14.468182415863886,2.3471496018890093e-4
+chla,Porites sp.,site_int_tp,74,12,461.64644511790897,FALSE,native_site * transplant_site,interactive,interactive,FALSE,FALSE,0,0.9010537279411006
+chla,Porites sp.,transplant_sym_int,74,9,467.84743829985496,TRUE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,6.200993181945989,0.04057159926417487
+chla,Porites sp.,site_int_sym_add_tp,74,16,468.8563655933508,FALSE,native_site * transplant_site + sym_dom_b4,interactive,interactive,TRUE,FALSE,7.209920475441834,0.02449832259176845
+chla,Porites sp.,site_add_sym_int,74,10,469.60293961308975,TRUE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,7.9564944951807774,0.016866301542198026
+chla,Porites sp.,site_int_sym_int,74,11,471.06096654473214,TRUE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,9.414521426823171,0.008136044871203276
+chla,Porites sp.,site_int_sym_add,74,10,473.28012780417134,TRUE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,11.633682686262375,0.0026824311910870896
+chla,Porites sp.,native_tp,74,8,475.0385292060981,TRUE,native_site,interactive,native,FALSE,FALSE,13.392084088189108,0.001113516296721531
+chla,Porites sp.,transplant_sym,74,8,475.6879289167445,TRUE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,14.041483798835543,8.047874995447082e-4
+chla,Porites sp.,null,74,5,475.7527827089462,FALSE,1,additive,none,FALSE,FALSE,14.106337591037232,7.791093207502954e-4
+chla,Porites sp.,transplant,74,6,476.19255405976804,FALSE,transplant_site,additive,transplant,FALSE,FALSE,14.546108941859075,6.253213610911846e-4
+chla,Porites sp.,site_int,74,8,476.22389419028855,FALSE,native_site * transplant_site,additive,interactive,FALSE,FALSE,14.57744907237958,6.155989092274757e-4
+chla,Porites sp.,site_add,74,7,476.700712134956,FALSE,native_site + transplant_site,additive,additive,FALSE,FALSE,15.054267017047039,4.850183172471633e-4
+chla,Porites sp.,native,74,6,477.05045119535356,FALSE,native_site,additive,native,FALSE,FALSE,15.404006077444592,4.072051561249272e-4
+chla,Porites sp.,site_add_sym_add,74,9,477.5850598078031,TRUE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,15.93861468989411,3.11691158613822e-4
+chla,Porites sp.,site_add_tp,74,10,477.74903273862896,FALSE,native_site + transplant_site,interactive,additive,FALSE,FALSE,16.102587620719987,2.8715621071892294e-4
+chla,Porites sp.,sym,74,7,478.1941478771179,TRUE,sym_dom_b4,additive,none,TRUE,FALSE,16.54770275920896,2.2985962273630012e-4
+chla,Porites sp.,sym_tp,74,9,479.3420223114726,TRUE,sym_dom_b4,interactive,none,TRUE,FALSE,17.695577193563622,1.2948066558431484e-4
+chla,Porites sp.,transplant_tp,74,8,479.69031272144747,FALSE,transplant_site,interactive,transplant,FALSE,FALSE,18.0438676035385,1.0878640412189613e-4
+chla,Porites sp.,native_sym,74,8,480.14190090248917,TRUE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,18.4954557845802,8.679875462955901e-5
+chla,Porites sp.,native_sym_int,74,8,480.14190090248917,TRUE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,18.4954557845802,8.679875462955901e-5
+chla,Porites sp.,native_sym_tp,74,12,480.6122435040573,FALSE,native_site + sym_dom_b4,interactive,native,TRUE,FALSE,18.96579838614832,6.860881144432823e-5
+chla,Porites sp.,transplant_sym_tp,74,12,482.16573242333357,TRUE,transplant_site + sym_dom_b4,interactive,transplant,TRUE,FALSE,20.519287305424598,3.1553247437245356e-5
+chla,Porites sp.,site_add_sym_add_tp,74,14,483.04960722960664,TRUE,native_site + transplant_site + sym_dom_b4,interactive,additive,TRUE,FALSE,21.403162111697668,2.0282107844327594e-5
+chla_sym,Porites sp.,sym,73,7,346.78098921959406,TRUE,sym_dom_b4,additive,none,TRUE,FALSE,0,0.21662858596863968
+chla_sym,Porites sp.,transplant_sym,73,8,348.29177094032417,TRUE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,1.5107817207301082,0.10177794611873882
+chla_sym,Porites sp.,native_sym,73,8,348.5920804746927,TRUE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,1.8110912550986313,0.08758753332360832
+chla_sym,Porites sp.,native_sym_int,73,8,348.5920804746927,TRUE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,1.8110912550986313,0.08758753332360832
+chla_sym,Porites sp.,sym_tp,73,9,348.91057306119785,TRUE,sym_dom_b4,interactive,none,TRUE,FALSE,2.1295838416037896,0.07469344825815556
+chla_sym,Porites sp.,transplant,73,6,349.2933050306577,TRUE,transplant_site,additive,transplant,FALSE,FALSE,2.5123158110636155,0.06168411215268347
+chla_sym,Porites sp.,site_add,73,7,349.58416548754843,TRUE,native_site + transplant_site,additive,additive,FALSE,FALSE,2.8031762679543704,0.05333518089406839
+chla_sym,Porites sp.,site_add_sym_add,73,9,350.1253042570522,TRUE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,3.344315037458159,0.04069180752917074
+chla_sym,Porites sp.,transplant_sym_int,73,9,350.15829876558496,TRUE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,3.3773095459908973,0.04002601143766292
+chla_sym,Porites sp.,native_sym_tp,73,12,350.46584897726996,TRUE,native_site + sym_dom_b4,interactive,native,TRUE,FALSE,3.684859757675895,0.03432089741963736
+chla_sym,Porites sp.,native,73,6,350.47160911693237,TRUE,native_site,additive,native,FALSE,FALSE,3.6906198973383084,0.034222193044373586
+chla_sym,Porites sp.,site_int_sym_add,73,10,350.57878972360993,TRUE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,3.7978005040158678,0.03243649084526033
+chla_sym,Porites sp.,transplant_tp,73,8,350.931536085877,TRUE,transplant_site,interactive,transplant,FALSE,FALSE,4.150546866282923,0.02719167522535214
+chla_sym,Porites sp.,site_int,73,8,351.3994337470086,TRUE,native_site * transplant_site,additive,interactive,FALSE,FALSE,4.6184445274145105,0.02151955459883886
+chla_sym,Porites sp.,native_tp,73,8,351.55316850145437,TRUE,native_site,interactive,native,FALSE,FALSE,4.7721792818603035,0.01992737990641787
+chla_sym,Porites sp.,null,73,5,351.66716993093473,TRUE,1,additive,none,FALSE,FALSE,4.886180711340671,0.018823271423862656
+chla_sym,Porites sp.,site_add_sym_int,73,10,351.9767866010001,TRUE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,5.19579738140601,0.016123625375284903
+chla_sym,Porites sp.,site_int_sym_int,73,11,352.3134968778637,TRUE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,5.532507658269651,0.013625328802774422
+chla_sym,Porites sp.,site_add_sym_add_tp,73,14,354.3632375164853,TRUE,native_site + transplant_site + sym_dom_b4,interactive,additive,TRUE,FALSE,7.582248296891237,0.004889353828093021
+chla_sym,Porites sp.,site_add_tp,73,10,354.38644893993137,TRUE,native_site + transplant_site,interactive,additive,FALSE,FALSE,7.605459720337308,0.004832937406651957
+chla_sym,Porites sp.,transplant_sym_tp,73,12,354.638004541996,TRUE,transplant_site + sym_dom_b4,interactive,transplant,TRUE,FALSE,7.857015322401935,0.004261736219469582
+chla_sym,Porites sp.,site_int_sym_add_tp,73,16,355.5733125937636,TRUE,native_site * transplant_site + sym_dom_b4,interactive,interactive,TRUE,FALSE,8.792323374169541,0.0026698508638652624
+chla_sym,Porites sp.,site_int_tp,73,12,357.2690898418373,TRUE,native_site * transplant_site,interactive,interactive,FALSE,FALSE,10.488100622243223,0.0011435460337819025
+dry_weight,Porites sp.,site_int_tp,73,12,428.8950160582165,TRUE,native_site * transplant_site,interactive,interactive,FALSE,FALSE,0,0.23195838148987938
+dry_weight,Porites sp.,sym,73,7,429.4339513875651,TRUE,sym_dom_b4,additive,none,TRUE,FALSE,0.5389353293485897,0.17716655888841334
+dry_weight,Porites sp.,site_int_sym_add,73,10,430.94724909283485,TRUE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,2.0522330346183253,0.08313297615648559
+dry_weight,Porites sp.,transplant_sym,73,8,431.1314780474467,TRUE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,2.236461989230179,0.07581733578818206
+dry_weight,Porites sp.,native_sym,73,8,431.2166902917686,TRUE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,2.3216742335520735,0.0726549010363613
+dry_weight,Porites sp.,native_sym_int,73,8,431.2166902917686,TRUE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,2.3216742335520735,0.0726549010363613
+dry_weight,Porites sp.,site_int_sym_add_tp,73,16,431.33954791610245,TRUE,native_site * transplant_site + sym_dom_b4,interactive,interactive,TRUE,FALSE,2.44453185788592,0.06832611402682487
+dry_weight,Porites sp.,native_sym_tp,73,12,431.9672677151132,TRUE,native_site + sym_dom_b4,interactive,native,TRUE,FALSE,3.0722516568966967,0.04992051981640289
+dry_weight,Porites sp.,site_int_sym_int,73,11,432.25449541882244,TRUE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,3.359479360605917,0.043242261181207324
+dry_weight,Porites sp.,transplant_sym_int,73,9,432.76029303933615,TRUE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,3.865276981119621,0.033579624686326706
+dry_weight,Porites sp.,site_add_sym_add,73,9,432.91252521217206,TRUE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,4.01750915395553,0.03111852772136828
+dry_weight,Porites sp.,sym_tp,73,9,433.2540623470028,TRUE,sym_dom_b4,interactive,none,TRUE,FALSE,4.35904628878626,0.026233437067897408
+dry_weight,Porites sp.,site_add_sym_int,73,10,434.49983904626134,TRUE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,5.604822988044816,0.014071429588778932
+dry_weight,Porites sp.,site_add_sym_add_tp,73,14,435.3616291001893,TRUE,native_site + transplant_site + sym_dom_b4,interactive,additive,TRUE,FALSE,6.466613041972778,0.00914540387603156
+dry_weight,Porites sp.,site_int,73,8,435.699888692255,TRUE,native_site * transplant_site,additive,interactive,FALSE,FALSE,6.804872634038475,0.007722372599989885
+dry_weight,Porites sp.,transplant_sym_tp,73,12,437.7344878316954,TRUE,transplant_site + sym_dom_b4,interactive,transplant,TRUE,FALSE,8.839471773478863,0.002792178397201588
+dry_weight,Porites sp.,native,73,6,443.1449082990168,TRUE,native_site,additive,native,FALSE,FALSE,14.24989224080025,1.8667462424309063e-4
+dry_weight,Porites sp.,native_tp,73,8,444.5176726311788,TRUE,native_site,interactive,native,FALSE,FALSE,15.622656572962285,9.39708810245792e-5
+dry_weight,Porites sp.,site_add_tp,73,10,444.5539768240058,TRUE,native_site + transplant_site,interactive,additive,FALSE,FALSE,15.658960765789288,9.228050091806273e-5
+dry_weight,Porites sp.,site_add,73,7,444.60110370259804,TRUE,native_site + transplant_site,additive,additive,FALSE,FALSE,15.706087644381512,9.013147360755196e-5
+dry_weight,Porites sp.,transplant_tp,73,8,462.6945489074056,FALSE,transplant_site,interactive,transplant,FALSE,FALSE,33.79953284918906,1.061536095497363e-8
+dry_weight,Porites sp.,transplant,73,6,463.8289391504263,FALSE,transplant_site,additive,transplant,FALSE,FALSE,34.933923092209795,6.0201187034267025e-9
+dry_weight,Porites sp.,null,73,5,465.5650756778268,FALSE,1,additive,none,FALSE,FALSE,36.6700596196103,2.527014871937119e-9
+sym_density,Porites sp.,site_int_sym_add_tp,76,16,141.99714472150646,FALSE,native_site * transplant_site + sym_dom_b4,interactive,interactive,TRUE,FALSE,0,0.9149300956883505
+sym_density,Porites sp.,site_int_sym_add,76,10,147.5943771382859,TRUE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,5.597232416779434,0.05571399966362155
+sym_density,Porites sp.,site_int_sym_int,76,11,149.0725967919833,FALSE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,7.075452070476842,0.026605597579367184
+sym_density,Porites sp.,site_add_sym_int,76,10,154.8321203423234,FALSE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,12.834975620816948,0.0014938547410842783
+sym_density,Porites sp.,transplant_sym_int,76,9,157.23556729056008,FALSE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,15.238422569053625,4.4916560867492216e-4
+sym_density,Porites sp.,native_sym_tp,76,12,157.42727454071215,FALSE,native_site + sym_dom_b4,interactive,native,TRUE,FALSE,15.430129819205689,4.081105255121103e-4
+sym_density,Porites sp.,site_add_sym_add_tp,76,14,160.39458842040673,TRUE,native_site + transplant_site + sym_dom_b4,interactive,additive,TRUE,FALSE,18.397443698900275,9.256222247084687e-5
+sym_density,Porites sp.,native_sym,76,8,160.40413754803825,TRUE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,18.40699282653179,9.212133160109039e-5
+sym_density,Porites sp.,native_sym_int,76,8,160.40413754803825,TRUE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,18.40699282653179,9.212133160109039e-5
+sym_density,Porites sp.,sym,76,7,161.86916974587714,TRUE,sym_dom_b4,additive,none,TRUE,FALSE,19.872025024370686,4.428253834221427e-5
+sym_density,Porites sp.,site_add_sym_add,76,9,161.95726955338338,TRUE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,19.960124831876925,4.2374235627375546e-5
+sym_density,Porites sp.,transplant_sym,76,8,163.4998525673222,TRUE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,21.502707845815735,1.9594502070431486e-5
+sym_density,Porites sp.,sym_tp,76,9,164.49736512679877,TRUE,sym_dom_b4,interactive,none,TRUE,FALSE,22.50022040529231,1.1899456663410963e-5
+sym_density,Porites sp.,transplant_sym_tp,76,12,168.01120409902404,TRUE,transplant_site + sym_dom_b4,interactive,transplant,TRUE,FALSE,26.014059377517583,2.053556677404928e-6
+sym_density,Porites sp.,native,76,6,170.83538376057282,TRUE,native_site,additive,native,FALSE,FALSE,28.838239039066366,5.003154015418807e-7
+sym_density,Porites sp.,null,76,5,171.2521977359861,FALSE,1,additive,none,FALSE,FALSE,29.255053014479643,4.061943399594302e-7
+sym_density,Porites sp.,site_int,76,8,171.34657947063135,FALSE,native_site * transplant_site,additive,interactive,FALSE,FALSE,29.349434749124896,3.874709381289779e-7
+sym_density,Porites sp.,transplant,76,6,171.42646732846555,FALSE,transplant_site,additive,transplant,FALSE,FALSE,29.42932260695909,3.722988599477694e-7
+sym_density,Porites sp.,site_add,76,7,171.93420799812347,FALSE,native_site + transplant_site,additive,additive,FALSE,FALSE,29.93706327661701,2.888266218981389e-7
+sym_density,Porites sp.,native_tp,76,8,174.2423524037141,TRUE,native_site,interactive,native,FALSE,FALSE,32.24520768220765,9.108147003096177e-8
+sym_density,Porites sp.,transplant_tp,76,8,175.11560005157023,FALSE,transplant_site,interactive,transplant,FALSE,FALSE,33.11845533006377,5.885816444004369e-8
+sym_density,Porites sp.,site_int_tp,76,12,176.12436521755356,FALSE,native_site * transplant_site,interactive,interactive,FALSE,FALSE,34.1272204960471,3.554316858258011e-8
+sym_density,Porites sp.,site_add_tp,76,10,176.7169092923863,TRUE,native_site + transplant_site,interactive,additive,FALSE,FALSE,34.719764570879846,2.642937118783765e-8
+calcification,Porites sp.,site_int,51,7,45.336837428146794,FALSE,native_site * transplant_site,additive,interactive,FALSE,FALSE,0,0.226501496680712
+calcification,Porites sp.,site_int_tp,51,10,45.667891029746116,FALSE,native_site * transplant_site,interactive,interactive,FALSE,FALSE,0.3310536015993222,0.19194804797759696
+calcification,Porites sp.,transplant_sym_int,51,8,47.15140753757693,FALSE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,1.8145701094301359,0.09142020342293229
+calcification,Porites sp.,transplant_sym_int_tp,51,10,47.300059428523824,FALSE,transplant_site * sym_dom_b4,interactive,transplant,TRUE,TRUE,1.96322200037703,0.08487168711295823
+calcification,Porites sp.,site_int_sym_add_tp,51,13,47.46861210420052,FALSE,native_site * transplant_site + sym_dom_b4,interactive,interactive,TRUE,FALSE,2.1317746760537233,0.07801212120936114
+calcification,Porites sp.,site_add_sym_int,51,9,47.94296174902851,FALSE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,2.606124320881719,0.061540124460367426
+calcification,Porites sp.,transplant_sym_tp,51,9,48.51499091952487,FALSE,transplant_site + sym_dom_b4,interactive,transplant,TRUE,FALSE,3.178153491378076,0.04623212057592267
+calcification,Porites sp.,site_int_sym_add,51,9,48.52108535105365,FALSE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,3.184247922906856,0.04609145575615622
+calcification,Porites sp.,site_int_sym_int,51,10,49.08526571016782,FALSE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,3.748428282021024,0.03476243715614945
+calcification,Porites sp.,sym,51,6,49.24855501294824,FALSE,sym_dom_b4,additive,none,TRUE,FALSE,3.911717584801444,0.03203704086337591
+calcification,Porites sp.,native_sym,51,7,50.25075621029035,FALSE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,4.913918782143554,0.01941007306928487
+calcification,Porites sp.,native_sym_int,51,7,50.25075621029035,FALSE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,4.913918782143554,0.01941007306928487
+calcification,Porites sp.,site_add_sym_add_tp,51,11,50.88933667177216,FALSE,native_site + transplant_site + sym_dom_b4,interactive,additive,TRUE,FALSE,5.55249924362537,0.014104613337832694
+calcification,Porites sp.,transplant_sym,51,7,50.97951140299945,FALSE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,5.642673974852656,0.01348279684892037
+calcification,Porites sp.,sym_tp,51,7,51.245409804120634,FALSE,sym_dom_b4,interactive,none,TRUE,FALSE,5.90857237597384,0.011804317622710994
+calcification,Porites sp.,site_add_sym_add,51,8,51.844248179724644,FALSE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,6.507410751577851,0.008749934170538508
+calcification,Porites sp.,native,51,5,52.669899268058145,FALSE,native_site,additive,native,FALSE,FALSE,7.333061839911352,0.0057905115182722506
+calcification,Porites sp.,site_add,51,6,53.08803499682131,FALSE,native_site + transplant_site,additive,additive,FALSE,FALSE,7.751197568674513,0.004698074615117115
+calcification,Porites sp.,native_sym_tp,51,9,53.673895916422865,FALSE,native_site + sym_dom_b4,interactive,native,TRUE,FALSE,8.337058488276071,0.003505111419196447
+calcification,Porites sp.,site_add_tp,51,8,53.81034948549631,FALSE,native_site + transplant_site,interactive,additive,FALSE,FALSE,8.473512057349517,0.0032739444902570376
+calcification,Porites sp.,native_tp,51,6,54.66559788864405,FALSE,native_site,interactive,native,FALSE,FALSE,9.328760460497257,0.0021347964926051247
+calcification,Porites sp.,transplant_tp,51,6,60.387132541716646,FALSE,transplant_site,interactive,transplant,FALSE,FALSE,15.050295113569852,1.2216337337891847e-4
+calcification,Porites sp.,transplant,51,5,61.90623349389307,FALSE,transplant_site,additive,transplant,FALSE,FALSE,16.569396065746275,5.715739618183335e-5
+calcification,Porites sp.,null,51,4,62.63528167349059,FALSE,1,additive,none,FALSE,FALSE,17.298444245343795,3.9697360886517816e-5
+pct_change_dw,Porites sp.,site_int_sym_add,31,8,86.52335902214305,FALSE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,0,0.46803690510969437
+pct_change_dw,Porites sp.,site_int_sym_int,31,8,86.52335902214305,FALSE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,0,0.46803690510969437
+pct_change_dw,Porites sp.,site_int,31,6,93.04517125119624,FALSE,native_site * transplant_site,additive,interactive,FALSE,FALSE,6.521812229053182,0.01795091404480535
+pct_change_dw,Porites sp.,null,31,3,94.21867428447777,FALSE,1,additive,none,FALSE,FALSE,7.6953152623347165,0.009983058623931442
+pct_change_dw,Porites sp.,transplant_sym,31,6,94.82855822841219,FALSE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,8.305199206269137,0.007359172885557436
+pct_change_dw,Porites sp.,transplant_sym_int,31,6,94.82855822841219,FALSE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,8.305199206269137,0.007359172885557436
+pct_change_dw,Porites sp.,transplant,31,4,94.97072213618283,FALSE,transplant_site,additive,transplant,FALSE,FALSE,8.447363114039774,0.006854227346894837
+pct_change_dw,Porites sp.,native,31,4,96.20193659446122,FALSE,native_site,additive,native,FALSE,FALSE,9.678577572318162,0.003703426098321834
+pct_change_dw,Porites sp.,site_add_sym_add,31,7,96.82566525339487,FALSE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,10.30230623125182,0.0027112073011195323
+pct_change_dw,Porites sp.,site_add_sym_int,31,7,96.82566525339487,FALSE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,10.30230623125182,0.0027112073011195323
+pct_change_dw,Porites sp.,site_add,31,5,96.84988218657259,FALSE,native_site + transplant_site,additive,additive,FALSE,FALSE,10.326523164429531,0.002678576690107085
+pct_change_dw,Porites sp.,sym,31,5,98.0110651203416,FALSE,sym_dom_b4,additive,none,TRUE,FALSE,11.487706098198544,0.0014988439347343912
+pct_change_dw,Porites sp.,native_sym,31,6,99.98656028687995,FALSE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,13.463201264736895,5.581913342311118e-4
+pct_change_dw,Porites sp.,native_sym_int,31,6,99.98656028687995,FALSE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,13.463201264736895,5.581913342311118e-4
+pct_change_sa,Porites sp.,sym,31,5,84.28743576248958,FALSE,sym_dom_b4,additive,none,TRUE,FALSE,0,0.16402832354056565
+pct_change_sa,Porites sp.,site_int,31,6,84.73921586281574,TRUE,native_site * transplant_site,additive,interactive,FALSE,FALSE,0.451780100326161,0.130862750421282
+pct_change_sa,Porites sp.,transplant,31,4,85.42507428184672,FALSE,transplant_site,additive,transplant,FALSE,FALSE,1.1376385193571394,0.09287178237458182
+pct_change_sa,Porites sp.,null,31,3,85.44725270276311,FALSE,1,additive,none,FALSE,FALSE,1.1598169402735294,0.09184759683407591
+pct_change_sa,Porites sp.,native,31,4,85.83366958669802,FALSE,native_site,additive,native,FALSE,FALSE,1.5462338242084428,0.07571090498283924
+pct_change_sa,Porites sp.,site_add,31,5,86.22064772796375,FALSE,native_site + transplant_site,additive,additive,FALSE,FALSE,1.9332119654741717,0.06239175496606182
+pct_change_sa,Porites sp.,native_sym,31,6,86.22446397655663,FALSE,native_site + sym_dom_b4,additive,native,TRUE,FALSE,1.9370282140670554,0.06227281725257094
+pct_change_sa,Porites sp.,native_sym_int,31,6,86.22446397655663,FALSE,native_site * sym_dom_b4,additive,native,TRUE,TRUE,1.9370282140670554,0.06227281725257094
+pct_change_sa,Porites sp.,transplant_sym,31,6,86.27885098036415,FALSE,transplant_site + sym_dom_b4,additive,transplant,TRUE,FALSE,1.9914152178745752,0.060602218934807404
+pct_change_sa,Porites sp.,transplant_sym_int,31,6,86.27885098036415,FALSE,transplant_site * sym_dom_b4,additive,transplant,TRUE,TRUE,1.9914152178745752,0.060602218934807404
+pct_change_sa,Porites sp.,site_int_sym_add,31,8,86.8632888733751,TRUE,native_site * transplant_site + sym_dom_b4,additive,interactive,TRUE,FALSE,2.575853110885518,0.045245922789432416
+pct_change_sa,Porites sp.,site_int_sym_int,31,8,86.8632888733751,TRUE,native_site * transplant_site * sym_dom_b4,additive,interactive,TRUE,TRUE,2.575853110885518,0.045245922789432416
+pct_change_sa,Porites sp.,site_add_sym_add,31,7,88.21457134980041,FALSE,native_site + transplant_site + sym_dom_b4,additive,additive,TRUE,FALSE,3.927135587310829,0.023022484463486037
+pct_change_sa,Porites sp.,site_add_sym_int,31,7,88.21457134980041,FALSE,(native_site + transplant_site) * sym_dom_b4,additive,additive,TRUE,TRUE,3.927135587310829,0.023022484463486037

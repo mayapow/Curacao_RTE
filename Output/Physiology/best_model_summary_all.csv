@@ -1,0 +1,77 @@
+﻿Across time Siderastrea siderea,,,,
+response,best_model,model_formula,AIC,significant_predictors
+chla_log,site_sym_time_int,chla_log ~ native_site * native_transplant * timepoint * sym_dom +      (1 | native_site/parent),-11.75472575,"timepoint, native_site:native_transplant, native_site:timepoint, native_site:sym_dom, NA, timepoint:sym_dom, native_site:native_transplant:timepoint, NA, NA, NA"
+chla_sym_log,transplant_sym_time_int_native_add,chla_sym_log ~ native_transplant * sym_dom * timepoint + native_site +      (1 | native_site/parent),20.23841904,"sym_dom, timepoint, sym_dom:timepoint, native_transplant:sym_dom:timepoint"
+sym_density_log,native_sym_time_int_transplant_add,sym_density_log ~ native_site * sym_dom * timepoint + native_transplant +      (1 | native_site/parent),17.43108512,"sym_dom, sym_dom:timepoint, native_site:sym_dom:timepoint"
+dry_weight,site_sym_time_int,dry_weight ~ native_site * native_transplant * timepoint * sym_dom +      (1 | native_site/parent),535.6329641,"native_site, sym_dom, native_site:native_transplant, native_transplant:timepoint, NA, native_site:native_transplant:timepoint, NA, native_site:timepoint:sym_dom, NA, NA"
+PGROSS.RDAY,site_int_time_add,PGROSS.RDAY ~ native_site * native_transplant + timepoint + (1 |      native_site/parent),-19.79936768,"native_site, timepoint, native_site:native_transplant"
+PNET,site_int_time_add,PNET ~ native_site * native_transplant + timepoint + (1 | native_site/parent),75.93248711,"native_site, timepoint, native_site:native_transplant"
+PGROSS,site_int_time_add,PGROSS ~ native_site * native_transplant + timepoint + (1 | native_site/parent),118.4889645,timepoint
+RDARK_abs,native_time,RDARK_abs ~ native_site + timepoint + (1 | native_site/parent),-3.891342048,timepoint
+LEDR_abs_log,site_int_time_int,LEDR_abs_log ~ native_site * native_transplant * timepoint +      (1 | native_site/parent),48.53682254,"native_site, timepoint, native_site:native_transplant:timepoint"
+calcification,native_sym_int_time_add,calcification ~ native_site * sym_dom + timepoint + (1 | native_site/parent),42.61789705,"sym_dom, timepoint, native_site:sym_dom"
+,,,,
+T4 Siderastrea siderea,,,,
+response,best_model,model_formula,AIC,significant_predictors
+chla_log,native_sym_add_transplant_int,chla_log ~ (native_site + sym_dom) * native_transplant + (1 |      native_site/parent),10.00217408,"native_site, sym_dom, native_site:native_transplant"
+chla_sym_log,native_sym_add_transplant_int,chla_sym_log ~ (native_site + sym_dom) * native_transplant +      (1 | native_site/parent),13.69299321,none
+sym_density_log,native_sym_int,sym_density_log ~ native_site * sym_dom + (1 | native_site/parent),5.276120652,native_site:sym_dom
+dry_weight,site_add,dry_weight ~ native_site + native_transplant + (1 | native_site/parent),208.3451431,native_site
+PGROSS.RDAY,site_int,PGROSS.RDAY ~ native_site * native_transplant + (1 | native_site/parent),11.78103865,native_site:native_transplant
+PNET,site_int_sym_add,PNET ~ native_site * native_transplant + sym_dom + (1 | native_site/parent),35.91381257,native_site:native_transplant
+PGROSS,site_int_sym_int,PGROSS ~ native_site * native_transplant * sym_dom + (1 | native_site/parent),32.02200404,"native_site:native_transplant, NA, NA"
+RDARK_abs,transplant,RDARK_abs ~ native_transplant + (1 | native_site/parent),-2.716957583,none
+LEDR_abs_log,site_int,LEDR_abs_log ~ native_site * native_transplant + (1 | native_site/parent),5.689538054,"native_transplant, native_site:native_transplant"
+calcification,native,calcification ~ native_site + (1 | native_site/parent),29.25414363,none
+,,,,
+T12 Siderastrea siderea,,,,
+response,best_model,model_formula,AIC,significant_predictors
+chla_log,transplant_sym_int,chla_log ~ native_transplant * sym_dom + (1 | native_site/parent),-18.02728703,native_transplant:sym_dom
+chla_sym_log,native_sym_int,chla_sym_log ~ native_site * sym_dom + (1 | native_site/parent),4.602850829,"sym_dom, native_site:sym_dom"
+sym_density_log,native_sym,sym_density_log ~ native_site + sym_dom + (1 | native_site/parent),4.699362369,sym_dom
+dry_weight,native_sym_add_transplant_int,dry_weight ~ (native_site + sym_dom) * native_transplant + (1 |      native_site/parent),329.0687968,"native_site, sym_dom, native_site:native_transplant, sym_dom:native_transplant"
+PGROSS.RDAY,site_int,PGROSS.RDAY ~ native_site * native_transplant + (1 | native_site/parent),-31.96606088,native_site:native_transplant
+PNET,native_sym,PNET ~ native_site + sym_dom + (1 | native_site/parent),35.07665126,sym_dom
+PGROSS,native,PGROSS ~ native_site + (1 | native_site/parent),77.14595056,none
+RDARK_abs,native,RDARK_abs ~ native_site + (1 | native_site/parent),17.43986922,none
+LEDR_abs_log,native,LEDR_abs_log ~ native_site + (1 | native_site/parent),38.94185581,none
+calcification,native_sym_int,calcification ~ native_site * sym_dom + (1 | native_site/parent),31.66930178,"sym_dom, native_site:sym_dom"
+,,,,
+Across time Branching Porites sp.,,,,
+response,best_model,model_formula,AIC,significant_predictors
+chla_sqrt,site_int_time_int,chla_sqrt ~ native_site * native_transplant * timepoint + (1 |      native_site/parent),101.3855988,"native_transplant, timepoint, native_site:native_transplant, native_site:timepoint, native_transplant:timepoint, native_site:native_transplant:timepoint"
+chla_sym_sqrt,transplant_time,chla_sym_sqrt ~ native_transplant + timepoint + (1 | native_site/parent),68.83650989,timepoint
+sym_density_sqrt,sym_time_add_native_int,sym_density_sqrt ~ (sym_dom + timepoint) * native_site + (1 |      native_site/parent),9.993935594,"sym_dom, timepoint, NA"
+dry_weight,site_int_time_int,dry_weight ~ native_site * native_transplant * timepoint + (1 |      native_site/parent),296.8359948,"native_transplant, timepoint, native_site:timepoint, native_transplant:timepoint, native_site:native_transplant:timepoint"
+PGROSS.RDAY,site_int,PGROSS.RDAY ~ native_site * native_transplant + (1 | native_site/parent),9.762015149,native_site:native_transplant
+PNET,site_int,PNET ~ native_site * native_transplant + (1 | native_site/parent),34.79370072,native_site:native_transplant
+PGROSS,site_int,PGROSS ~ native_site * native_transplant + (1 | native_site/parent),70.70047322,native_site:native_transplant
+RDARK_abs,null,RDARK_abs ~ 1 + (1 | native_site/parent),-59.84421745,NA
+LEDR_abs,native_time_int_sym_add,LEDR_abs ~ native_site * timepoint + sym_dom + (1 | native_site/parent),-22.03992229,"timepoint, native_site:timepoint"
+calcification,site_int,calcification ~ native_site * native_transplant + (1 | native_site/parent),46.75151846,native_transplant
+,,,,
+T4 Branching Porites sp.,,,,
+response,best_model,model_formula,AIC,significant_predictors
+chla_sqrt,site_int,chla_sqrt ~ native_site * native_transplant + (1 | native_site/parent),46.25199689,"native_site, native_transplant, native_site:native_transplant"
+chla_sym_sqrt,null,chla_sym_sqrt ~ 1 + (1 | native_site/parent),39.53912591,NA
+sym_density_sqrt,transplant,sym_density_sqrt ~ native_transplant + (1 | native_site/parent),16.88522015,native_transplant
+dry_weight,native,dry_weight ~ native_site + (1 | native_site/parent),120.0357026,native_site
+PGROSS.RDAY,null,PGROSS.RDAY ~ 1 + (1 | native_site/parent),20.4589595,NA
+PNET,native,PNET ~ native_site + (1 | native_site/parent),27.57656124,none
+PGROSS,native,PGROSS ~ native_site + (1 | native_site/parent),34.73493126,none
+RDARK_abs,native_sym,RDARK_abs ~ native_site + sym_dom + (1 | native_site/parent),-22.16923635,native_site
+LEDR_abs,native,LEDR_abs ~ native_site + (1 | native_site/parent),-23.77015441,none
+calcification,site_int,calcification ~ native_site * native_transplant + (1 | native_site/parent),12.29962508,"native_site, native_site:native_transplant"
+,,,,
+T12 Branching Porites sp.,,,,
+response,best_model,model_formula,AIC,significant_predictors
+chla_sqrt,transplant,chla_sqrt ~ native_transplant + (1 | native_site/parent),58.9960356,none
+chla_sym_sqrt,null,chla_sym_sqrt ~ 1 + (1 | native_site/parent),29.21805011,NA
+sym_density_sqrt,null,sym_density_sqrt ~ 1 + (1 | native_site/parent),-6.653424693,NA
+dry_weight,site_int,dry_weight ~ native_site * native_transplant + (1 | native_site/parent),177.5190884,"native_site, native_transplant, native_site:native_transplant"
+PGROSS.RDAY,site_int,PGROSS.RDAY ~ native_site * native_transplant + (1 | native_site/parent),-15.96403717,native_site:native_transplant
+PNET,site_int,PNET ~ native_site * native_transplant + (1 | native_site/parent),11.57276225,native_site:native_transplant
+PGROSS,transplant,PGROSS ~ native_transplant + (1 | native_site/parent),44.46971516,none
+RDARK_abs,transplant,RDARK_abs ~ native_transplant + (1 | native_site/parent),-10.53257393,none
+LEDR_abs,transplant,LEDR_abs ~ native_transplant + (1 | native_site/parent),0.545387743,native_transplant
+calcification,site_add,calcification ~ native_site + native_transplant + (1 | native_site/parent),36.20447781,native_transplant

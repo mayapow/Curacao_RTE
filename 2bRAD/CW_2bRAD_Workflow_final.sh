@@ -63,27 +63,20 @@ pwd
 
 #------------------------------DE NOVO RAD BUSINESS
 
-#extract all samples
-tar -xvf plob-fastqs.tar.gz #cannot tell what these are
-tar -xvf cas-fastqs.tar.gz #none match ids from ally output sheet
-tar -xvf genome-fastqs.tar.gz #have metadata - use
-tar -xvf fgb-fastqs.tar.gz #have metadata - use
-tar -xvf belize-fastqs.tar.gz #have metadata - use
-#from what I can tell - I really only can use Belize, FGB, genome and my fastq files
-#total = 74 files, much better than what I had!
-#only lineages 2 and 4 represented
-#other files might be different species
-
 #get hannah files
+#PRJNA833675
 curl -s "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA973074&result=read_run&fields=run_accession,sample_alias,fastq_ftp,fastq_md5&format=tsv" > filereport.tsv
 
 cut -f3 filereport.tsv | tail -n +2 | tr ';' '\n' | sed 's|^|ftp://|' > urls.txt
 wget -c -i urls.txt
 
-#OR
-module load sratoolkit        #set up sra toolkit and where you want it to go - include file path info
-prefetch --option-file SRR_Acc_List.txt
-xargs -n1 fasterq-dump --split-files < SRR_Acc_List.txt
+#get karina files
+#PRJNA833675
+curl -s "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA833675&result=read_run&fields=run_accession,sample_alias,fastq_ftp,fastq_md5&format=tsv" > filereport.tsv
+
+cut -f3 filereport.tsv | tail -n +2 | tr ';' '\n' | sed 's|^|ftp://|' > urls.txt
+wget -c -i urls.txt
+
 
 #move to new folder:
 mv /proj/kdcastil/users/mayapow/2bRAD/*.fastq.gz /proj/kdcastil/users/mayapow/2bRAD/denovo_sid_combo
@@ -278,7 +271,7 @@ tar -xvf bam_files_all.tar.gz
 # MAYA HAD THIS SAME ISSUE
 #grep: maps.e*: No such file or directory
 
-
+#FIXED!
 #instead run this:
 #$F.bam is the name your s2b step produced from $F.sam.
 #bc we mapped with --no-unal, unaligned reads aren't in the BAM
@@ -345,85 +338,6 @@ cat alignmentRates
 #17_S17_L001_R1_001_TCAG.nosymbio.fastq.sam      70.38
 #17_S17_L001_R1_001_TGGT.nosymbio.fastq.sam      66.80
 #17_S17_L001_R1_001_TGTC.nosymbio.fastq.sam      69.80
-
-
-#sid with other samples
-16_S16_L001_R1_001_ACCA.nosymbio.fastq.sam      89.25
-16_S16_L001_R1_001_AGAC.nosymbio.fastq.sam      89.46
-16_S16_L001_R1_001_AGTG.nosymbio.fastq.sam      89.88
-16_S16_L001_R1_001_CATC.nosymbio.fastq.sam      89.33
-16_S16_L001_R1_001_CTAC.nosymbio.fastq.sam      88.97
-16_S16_L001_R1_001_GACT.nosymbio.fastq.sam      88.36
-16_S16_L001_R1_001_GCTT.nosymbio.fastq.sam      87.41
-16_S16_L001_R1_001_GTGA.nosymbio.fastq.sam      89.36
-16_S16_L001_R1_001_TCAC.nosymbio.fastq.sam      88.40
-16_S16_L001_R1_001_TCAG.nosymbio.fastq.sam      89.22
-16_S16_L001_R1_001_TGGT.nosymbio.fastq.sam      89.16
-16_S16_L001_R1_001_TGTC.nosymbio.fastq.sam      88.87
-17_S17_L001_R1_001_ACCA.nosymbio.fastq.sam      86.48
-17_S17_L001_R1_001_AGAC.nosymbio.fastq.sam      85.71
-17_S17_L001_R1_001_AGTG.nosymbio.fastq.sam      86.88
-17_S17_L001_R1_001_CATC.nosymbio.fastq.sam      86.89
-17_S17_L001_R1_001_CTAC.nosymbio.fastq.sam      87.02
-17_S17_L001_R1_001_GACT.nosymbio.fastq.sam      86.59
-17_S17_L001_R1_001_GCTT.nosymbio.fastq.sam      86.13
-17_S17_L001_R1_001_GTGA.nosymbio.fastq.sam      86.68
-17_S17_L001_R1_001_TCAC.nosymbio.fastq.sam      86.10
-17_S17_L001_R1_001_TCAG.nosymbio.fastq.sam      86.69
-17_S17_L001_R1_001_TGGT.nosymbio.fastq.sam      84.12
-17_S17_L001_R1_001_TGTC.nosymbio.fastq.sam      86.40
-23_S23_L001_R1_001_TCAC.nosymbio.fastq.sam      77.94
-26_S26_L001_R1_001_CTAC.nosymbio.fastq.sam      85.17
-26_S26_L001_R1_001_GCTT.nosymbio.fastq.sam      81.07
-26_S26_L001_R1_001_TGTC.nosymbio.fastq.sam      85.09
-29_S29_L001_R1_001_ACCA.nosymbio.fastq.sam      87.51
-29_S29_L001_R1_001_AGAC.nosymbio.fastq.sam      87.80
-29_S29_L001_R1_001_AGTG.nosymbio.fastq.sam      88.45
-29_S29_L001_R1_001_CATC.nosymbio.fastq.sam      89.26
-29_S29_L001_R1_001_CTAC.nosymbio.fastq.sam      87.76
-29_S29_L001_R1_001_GACT.nosymbio.fastq.sam      87.85
-29_S29_L001_R1_001_TCAG.nosymbio.fastq.sam      88.21
-29_S29_L001_R1_001_TGGT.nosymbio.fastq.sam      80.43
-30_S30_L001_R1_001_CTAC.nosymbio.fastq.sam      86.02
-29_S29_L001_R1_001_TGTC.nosymbio.fastq.sam      88.41
-30_S30_L001_R1_001_ACCA.nosymbio.fastq.sam      87.57
-30_S30_L001_R1_001_AGAC.nosymbio.fastq.sam      85.34
-30_S30_L001_R1_001_AGTG.nosymbio.fastq.sam      88.53
-30_S30_L001_R1_001_CATC.nosymbio.fastq.sam      86.97
-30_S30_L001_R1_001_CTAC.nosymbio.fastq.sam      86.02
-30_S30_L001_R1_001_GACT.nosymbio.fastq.sam      72.08
-30_S30_L001_R1_001_GCTT.nosymbio.fastq.sam      87.55
-30_S30_L001_R1_001_GTGA.nosymbio.fastq.sam      87.78
-30_S30_L001_R1_001_TGTC.nosymbio.fastq.sam      85.32
-31_S31_L001_R1_001_ACCA.nosymbio.fastq.sam      50.75
-31_S31_L001_R1_001_AGAC.nosymbio.fastq.sam      88.65
-31_S31_L001_R1_001_AGTG.nosymbio.fastq.sam      86.30
-31_S31_L001_R1_001_CATC.nosymbio.fastq.sam      88.66
-31_S31_L001_R1_001_CTAC.nosymbio.fastq.sam      77.47
-31_S31_L001_R1_001_GTGA.nosymbio.fastq.sam      88.07
-31_S31_L001_R1_001_TCAC.nosymbio.fastq.sam      88.43
-31_S31_L001_R1_001_TGGT.nosymbio.fastq.sam      86.02
-32_S32_L001_R1_001_ACCA.nosymbio.fastq.sam      84.35
-32_S32_L001_R1_001_AGAC.nosymbio.fastq.sam      86.70
-32_S32_L001_R1_001_AGTG.nosymbio.fastq.sam      86.46
-32_S32_L001_R1_001_CATC.nosymbio.fastq.sam      86.47
-32_S32_L001_R1_001_CTAC.nosymbio.fastq.sam      85.99
-32_S32_L001_R1_001_GACT.nosymbio.fastq.sam      84.93
-32_S32_L001_R1_001_GCTT.nosymbio.fastq.sam      87.69
-32_S32_L001_R1_001_GTGA.nosymbio.fastq.sam      88.75
-32_S32_L001_R1_001_TGGT.nosymbio.fastq.sam      85.56
-33_S33_L001_R1_001_ACCA.nosymbio.fastq.sam      85.32
-33_S33_L001_R1_001_AGAC.nosymbio.fastq.sam      84.99
-33_S33_L001_R1_001_AGTG.nosymbio.fastq.sam      88.54
-33_S33_L001_R1_001_CATC.nosymbio.fastq.sam      88.69
-33_S33_L001_R1_001_CTAC.nosymbio.fastq.sam      81.52
-33_S33_L001_R1_001_GCTT.nosymbio.fastq.sam      67.60
-33_S33_L001_R1_001_GTGA.nosymbio.fastq.sam      87.34
-33_S33_L001_R1_001_TCAC.nosymbio.fastq.sam      84.98
-33_S33_L001_R1_001_TCAG.nosymbio.fastq.sam      88.08
-33_S33_L001_R1_001_TGGT.nosymbio.fastq.sam      84.79
-7_S7_L001_R1_001_GACT.nosymbio.fastq.sam        85.82
-
 
 #maya combo with hannah data
 16_S16_L001_R1_001_ACCA.nosymbio.fastq.sam      85.24
@@ -512,138 +426,6 @@ SRR24594013.fastq.sam   99.62
 SRR24594014.fastq.sam   99.67
 SRR24594015.fastq.sam   99.59
 
-#maya sid all
-16_S16_L001_R1_001_ACCA.nosymbio.fastq.sam      89.48
-16_S16_L001_R1_001_AGAC.nosymbio.fastq.sam      89.71
-16_S16_L001_R1_001_AGTG.nosymbio.fastq.sam      90.03
-16_S16_L001_R1_001_CATC.nosymbio.fastq.sam      89.53
-16_S16_L001_R1_001_CTAC.nosymbio.fastq.sam      89.16
-16_S16_L001_R1_001_GACT.nosymbio.fastq.sam      88.76
-16_S16_L001_R1_001_GCTT.nosymbio.fastq.sam      87.48
-16_S16_L001_R1_001_GTGA.nosymbio.fastq.sam      89.43
-16_S16_L001_R1_001_TCAC.nosymbio.fastq.sam      88.58
-16_S16_L001_R1_001_TCAG.nosymbio.fastq.sam      89.39
-16_S16_L001_R1_001_TGGT.nosymbio.fastq.sam      89.26
-16_S16_L001_R1_001_TGTC.nosymbio.fastq.sam      88.98
-17_S17_L001_R1_001_ACCA.nosymbio.fastq.sam      86.71
-17_S17_L001_R1_001_AGAC.nosymbio.fastq.sam      85.92
-17_S17_L001_R1_001_AGTG.nosymbio.fastq.sam      87.22
-17_S17_L001_R1_001_CATC.nosymbio.fastq.sam      87.08
-17_S17_L001_R1_001_CTAC.nosymbio.fastq.sam      87.36
-17_S17_L001_R1_001_GACT.nosymbio.fastq.sam      86.68
-17_S17_L001_R1_001_GCTT.nosymbio.fastq.sam      86.24
-17_S17_L001_R1_001_GTGA.nosymbio.fastq.sam      86.92
-17_S17_L001_R1_001_TCAC.nosymbio.fastq.sam      86.40
-17_S17_L001_R1_001_TCAG.nosymbio.fastq.sam      86.90
-17_S17_L001_R1_001_TGGT.nosymbio.fastq.sam      86.07
-17_S17_L001_R1_001_TGTC.nosymbio.fastq.sam      86.66
-29_S29_L001_R1_001_ACCA.nosymbio.fastq.sam      87.85
-29_S29_L001_R1_001_AGAC.nosymbio.fastq.sam      88.15
-29_S29_L001_R1_001_AGTG.nosymbio.fastq.sam      88.83
-29_S29_L001_R1_001_CATC.nosymbio.fastq.sam      89.58
-29_S29_L001_R1_001_CTAC.nosymbio.fastq.sam      87.97
-29_S29_L001_R1_001_GACT.nosymbio.fastq.sam      88.24
-29_S29_L001_R1_001_TCAG.nosymbio.fastq.sam      88.63
-29_S29_L001_R1_001_TGGT.nosymbio.fastq.sam      81.52
-29_S29_L001_R1_001_TGTC.nosymbio.fastq.sam      88.73
-30_S30_L001_R1_001_ACCA.nosymbio.fastq.sam      87.82
-30_S30_L001_R1_001_AGAC.nosymbio.fastq.sam      85.58
-30_S30_L001_R1_001_AGTG.nosymbio.fastq.sam      88.81
-30_S30_L001_R1_001_CATC.nosymbio.fastq.sam      87.23
-30_S30_L001_R1_001_CTAC.nosymbio.fastq.sam      86.18
-30_S30_L001_R1_001_GACT.nosymbio.fastq.sam      72.10
-30_S30_L001_R1_001_GCTT.nosymbio.fastq.sam      87.96
-30_S30_L001_R1_001_GTGA.nosymbio.fastq.sam      88.00
-30_S30_L001_R1_001_TGTC.nosymbio.fastq.sam      85.66
-31_S31_L001_R1_001_ACCA.nosymbio.fastq.sam      50.65
-31_S31_L001_R1_001_AGAC.nosymbio.fastq.sam      88.97
-31_S31_L001_R1_001_AGTG.nosymbio.fastq.sam      88.32
-31_S31_L001_R1_001_CATC.nosymbio.fastq.sam      88.87
-31_S31_L001_R1_001_CTAC.nosymbio.fastq.sam      78.46
-31_S31_L001_R1_001_GTGA.nosymbio.fastq.sam      88.44
-31_S31_L001_R1_001_TCAC.nosymbio.fastq.sam      88.84
-31_S31_L001_R1_001_TGGT.nosymbio.fastq.sam      88.10
-32_S32_L001_R1_001_ACCA.nosymbio.fastq.sam      86.15
-32_S32_L001_R1_001_AGAC.nosymbio.fastq.sam      86.97
-32_S32_L001_R1_001_AGTG.nosymbio.fastq.sam      86.61
-32_S32_L001_R1_001_CATC.nosymbio.fastq.sam      88.44
-32_S32_L001_R1_001_CTAC.nosymbio.fastq.sam      86.27
-32_S32_L001_R1_001_GACT.nosymbio.fastq.sam      86.93
-32_S32_L001_R1_001_GCTT.nosymbio.fastq.sam      87.94
-32_S32_L001_R1_001_GTGA.nosymbio.fastq.sam      89.05
-32_S32_L001_R1_001_TGGT.nosymbio.fastq.sam      87.57
-33_S33_L001_R1_001_ACCA.nosymbio.fastq.sam      85.54
-33_S33_L001_R1_001_AGAC.nosymbio.fastq.sam      87.00
-33_S33_L001_R1_001_AGTG.nosymbio.fastq.sam      88.83
-33_S33_L001_R1_001_CATC.nosymbio.fastq.sam      88.94
-33_S33_L001_R1_001_CTAC.nosymbio.fastq.sam      81.53
-33_S33_L001_R1_001_GCTT.nosymbio.fastq.sam      67.44
-33_S33_L001_R1_001_GTGA.nosymbio.fastq.sam      87.58
-33_S33_L001_R1_001_TCAC.nosymbio.fastq.sam      87.03
-33_S33_L001_R1_001_TCAG.nosymbio.fastq.sam      88.48
-33_S33_L001_R1_001_TGGT.nosymbio.fastq.sam      86.53
-SRR24593955.fastq.sam   99.38
-SRR24593956.fastq.sam   98.98
-SRR24593957.fastq.sam   99.27
-SRR24593958.fastq.sam   98.95
-SRR24593959.fastq.sam   99.06
-SRR24593960.fastq.sam   98.96
-SRR24593961.fastq.sam   98.94
-SRR24593962.fastq.sam   98.91
-SRR24593963.fastq.sam   99.33
-SRR24593964.fastq.sam   98.95
-SRR24593965.fastq.sam   99.33
-SRR24593966.fastq.sam   99.27
-SRR24593967.fastq.sam   98.97
-SRR24593968.fastq.sam   99.31
-SRR24593969.fastq.sam   99.38
-SRR24593970.fastq.sam   98.99
-SRR24593971.fastq.sam   99.33
-SRR24593972.fastq.sam   99.33
-SRR24593973.fastq.sam   99.31
-SRR24593974.fastq.sam   99.30
-SRR24593975.fastq.sam   98.96
-SRR24593976.fastq.sam   98.97
-SRR24593977.fastq.sam   99.34
-SRR24593978.fastq.sam   99.09
-SRR24593979.fastq.sam   99.30
-SRR24593980.fastq.sam   99.05
-SRR24593981.fastq.sam   98.86
-SRR24593982.fastq.sam   99.19
-SRR24593983.fastq.sam   99.39
-SRR24593984.fastq.sam   99.31
-SRR24593985.fastq.sam   99.23
-SRR24593986.fastq.sam   99.02
-SRR24593987.fastq.sam   99.01
-SRR24593988.fastq.sam   98.98
-SRR24593989.fastq.sam   98.97
-SRR24593990.fastq.sam   98.91
-SRR24593991.fastq.sam   98.94
-SRR24593992.fastq.sam   99.16
-SRR24593993.fastq.sam   98.94
-SRR24593994.fastq.sam   98.97
-SRR24593995.fastq.sam   98.98
-SRR24593996.fastq.sam   99.03
-SRR24593997.fastq.sam   99.26
-SRR24593998.fastq.sam   99.31
-SRR24593999.fastq.sam   98.99
-SRR24594000.fastq.sam   98.99
-SRR24594001.fastq.sam   99.03
-SRR24594002.fastq.sam   99.34
-SRR24594003.fastq.sam   99.03
-SRR24594004.fastq.sam   99.03
-SRR24594005.fastq.sam   99.34
-SRR24594006.fastq.sam   98.98
-SRR24594007.fastq.sam   99.31
-SRR24594008.fastq.sam   99.00
-SRR24594009.fastq.sam   99.01
-SRR24594010.fastq.sam   99.01
-SRR24594011.fastq.sam   99.09
-SRR24594012.fastq.sam   98.96
-SRR24594013.fastq.sam   99.33
-SRR24594014.fastq.sam   99.37
-SRR24594015.fastq.sam   99.25
-
 #------------------------------ANGSD (fuzzy genotyping)
 # this first run-through of ANGSD is just to take a look at base qualities and coverage depth, 
 # we will run angsd again with filters informed by this first run-through
@@ -702,25 +484,6 @@ Rscript /proj/kdcastil/users/mayapow/2bRAD/2bRAD_denovo/plotQC.R prefix=dd
 
 # proportion of sites covered at >5x:
 cat quality.txt
-#just a few of hannah's to show range
-# 1-MullenDavies_S1_GTGA.nosymbio.fastq.bam 0.084345091093719
-# 4-MullenDavies_S4_AGAC.nosymbio.fastq.bam 0.0968114006980149
-# 3-MullenDavies_S3_GACT.nosymbio.fastq.bam 0.107732290119309
-# 5-MullenDavies_S5_GACT.nosymbio.fastq.bam 0.360611860249588
-# 5-MullenDavies_S5_TCAC.nosymbio.fastq.bam 0.37669904363539
-# 3-MullenDavies_S3_TCAC.nosymbio.fastq.bam 0.385333375345226
-# 2-MullenDavies_S2_GCTT.nosymbio.fastq.bam 0.388500871930495
-# 3-MullenDavies_S3_AGAC.nosymbio.fastq.bam 0.397788901368651
-# 1-MullenDavies_S1_AGTG.nosymbio.fastq.bam 0.400808378560385
-# 5-MullenDavies_S5_AGAC.nosymbio.fastq.bam 0.410006551256408
-# 3-MullenDavies_S3_ACCA.nosymbio.fastq.bam 0.413834531060923
-# 4-MullenDavies_S4_TCAG.nosymbio.fastq.bam 0.417344477729921
-# 6-MullenDavies_S6_TGGT.nosymbio.fastq.bam 0.484359772831813
-# 1-MullenDavies_S1_TCAC.nosymbio.fastq.bam 0.626660892952064
-# 1-MullenDavies_S1_TGTC.nosymbio.fastq.bam 0.628979622484748
-# 2-MullenDavies_S2_TGTC.nosymbio.fastq.bam 0.629282005629554
-# 3-MullenDavies_S3_GTGA.nosymbio.fastq.bam 0.731616565034842
-# 1-MullenDavies_S1_CTAC.nosymbio.fastq.bam 0.837796101341018
 
 #Porites - Maya - these look really good
 #18_S18_L001_R1_001_TCAC.nosymbio.fastq.bam 0.0207417585087513
@@ -773,83 +536,6 @@ cat quality.txt
 #17_S17_L001_R1_001_GCTT.nosymbio.fastq.bam      0.64692112
 #17_S17_L001_R1_001_TCAC.nosymbio.fastq.bam      0.73164628
 #17_S17_L001_R1_001_GTGA.nosymbio.fastq.bam      0.75404553
-
-#Siderastrea with other samples
-#16_S16_L001_R1_001_CTAC.nosymbio.fastq.bam 0.00886770960028349
-#16_S16_L001_R1_001_CATC.nosymbio.fastq.bam 0.00948666866771286
-#16_S16_L001_R1_001_TGTC.nosymbio.fastq.bam 0.00999151250827268
-#16_S16_L001_R1_001_GACT.nosymbio.fastq.bam 0.0101988676837821
-#16_S16_L001_R1_001_TGGT.nosymbio.fastq.bam 0.0105452057186305
-#16_S16_L001_R1_001_GCTT.nosymbio.fastq.bam 0.0107342539902086
-#16_S16_L001_R1_001_ACCA.nosymbio.fastq.bam 0.0108180407926144
-#16_S16_L001_R1_001_AGTG.nosymbio.fastq.bam 0.010868541377514
-#16_S16_L001_R1_001_AGAC.nosymbio.fastq.bam 0.0111455298657174
-#16_S16_L001_R1_001_TCAG.nosymbio.fastq.bam 0.0119344280962919
-#16_S16_L001_R1_001_TCAC.nosymbio.fastq.bam 0.0128568677412105
-#16_S16_L001_R1_001_GTGA.nosymbio.fastq.bam 0.0129120056157203
-#31_S31_L001_R1_001_CTAC.nosymbio.fastq.bam 0.019834742031586
-#33_S33_L001_R1_001_CTAC.nosymbio.fastq.bam 0.0237338740217166
-#33_S33_L001_R1_001_GCTT.nosymbio.fastq.bam 0.0248023699151154
-#30_S30_L001_R1_001_GACT.nosymbio.fastq.bam 0.0255004585651887
-#23_S23_L001_R1_001_TCAC.nosymbio.fastq.bam 0.0259946058240683
-#31_S31_L001_R1_001_ACCA.nosymbio.fastq.bam 0.0326442163813608
-#32_S32_L001_R1_001_CTAC.nosymbio.fastq.bam 0.0444484802663825
-#33_S33_L001_R1_001_ACCA.nosymbio.fastq.bam 0.0490479363329644
-#30_S30_L001_R1_001_CTAC.nosymbio.fastq.bam 0.0596719305287955
-#32_S32_L001_R1_001_ACCA.nosymbio.fastq.bam 0.081394641687821
-#29_S29_L001_R1_001_CTAC.nosymbio.fastq.bam 0.0848094430607859
-#30_S30_L001_R1_001_CATC.nosymbio.fastq.bam 0.0895856837794954
-#29_S29_L001_R1_001_ACCA.nosymbio.fastq.bam 0.0912687403916138
-#32_S32_L001_R1_001_AGAC.nosymbio.fastq.bam 0.0914943599673363
-#30_S30_L001_R1_001_AGAC.nosymbio.fastq.bam 0.0915568740481463
-#26_S26_L001_R1_001_TGTC.nosymbio.fastq.bam 0.103062738922629
-#26_S26_L001_R1_001_GCTT.nosymbio.fastq.bam 0.108484536346013
-#29_S29_L001_R1_001_CATC.nosymbio.fastq.bam 0.114444254804017
-#32_S32_L001_R1_001_AGTG.nosymbio.fastq.bam 0.120894985883175
-#29_S29_L001_R1_001_TGGT.nosymbio.fastq.bam 0.134940378648001
-#33_S33_L001_R1_001_TGGT.nosymbio.fastq.bam 0.158299901681898
-#26_S26_L001_R1_001_CTAC.nosymbio.fastq.bam 0.197172672236067
-#30_S30_L001_R1_001_ACCA.nosymbio.fastq.bam 0.203119369984041
-#17_S17_L001_R1_001_AGAC.nosymbio.fastq.bam 0.226698822777705
-#17_S17_L001_R1_001_TCAG.nosymbio.fastq.bam 0.230479016078119
-#17_S17_L001_R1_001_CATC.nosymbio.fastq.bam 0.258670822780581
-#33_S33_L001_R1_001_AGTG.nosymbio.fastq.bam 0.263171407523921
-#17_S17_L001_R1_001_TCAC.nosymbio.fastq.bam 0.684091431399933
-#32_S32_L001_R1_001_GACT.nosymbio.fastq.bam 0.277403845270037
-#33_S33_L001_R1_001_AGAC.nosymbio.fastq.bam 0.279431972902548
-#17_S17_L001_R1_001_CTAC.nosymbio.fastq.bam 0.334423108512006
-#33_S33_L001_R1_001_CATC.nosymbio.fastq.bam 0.358342112065715
-#31_S31_L001_R1_001_TGGT.nosymbio.fastq.bam 0.381221970836539
-#17_S17_L001_R1_001_AGTG.nosymbio.fastq.bam 0.390276381820022
-#32_S32_L001_R1_001_CATC.nosymbio.fastq.bam 0.400331362851277
-#32_S32_L001_R1_001_TGGT.nosymbio.fastq.bam 0.406568212249186
-#17_S17_L001_R1_001_TGTC.nosymbio.fastq.bam 0.42376239689155
-#17_S17_L001_R1_001_TGGT.nosymbio.fastq.bam 0.426027865324662
-#31_S31_L001_R1_001_AGTG.nosymbio.fastq.bam 0.457731488680252
-#17_S17_L001_R1_001_ACCA.nosymbio.fastq.bam 0.486042023032297
-#17_S17_L001_R1_001_GACT.nosymbio.fastq.bam 0.520649176129776
-#17_S17_L001_R1_001_GCTT.nosymbio.fastq.bam 0.586085932430741
-#29_S29_L001_R1_001_GACT.nosymbio.fastq.bam 0.589420114668959
-#31_S31_L001_R1_001_AGAC.nosymbio.fastq.bam 0.624139213031878
-#29_S29_L001_R1_001_AGTG.nosymbio.fastq.bam 0.681889981303538
-#17_S17_L001_R1_001_TCAC.nosymbio.fastq.bam 0.684091431399933
-#17_S17_L001_R1_001_GTGA.nosymbio.fastq.bam 0.698860993027155
-#29_S29_L001_R1_001_AGAC.nosymbio.fastq.bam 0.722929653732317
-#30_S30_L001_R1_001_GCTT.nosymbio.fastq.bam 0.785381916533884
-#33_S33_L001_R1_001_TCAG.nosymbio.fastq.bam 0.803863794661516
-#33_S33_L001_R1_001_TCAC.nosymbio.fastq.bam 0.816315670445547
-#31_S31_L001_R1_001_TCAC.nosymbio.fastq.bam 0.847798236100842
-#30_S30_L001_R1_001_AGTG.nosymbio.fastq.bam 0.852441434686898
-#31_S31_L001_R1_001_CATC.nosymbio.fastq.bam 0.858920038738269
-#32_S32_L001_R1_001_GTGA.nosymbio.fastq.bam 0.901107608438852
-#30_S30_L001_R1_001_TGTC.nosymbio.fastq.bam 0.92316726500877
-#32_S32_L001_R1_001_GCTT.nosymbio.fastq.bam 0.92349886138023
-#29_S29_L001_R1_001_TCAG.nosymbio.fastq.bam 0.931719127338368
-#7_S7_L001_R1_001_GACT.nosymbio.fastq.bam 0.954109263672914
-#29_S29_L001_R1_001_TGTC.nosymbio.fastq.bam 0.958630945517052
-#30_S30_L001_R1_001_GTGA.nosymbio.fastq.bam 0.968103495564536
-#31_S31_L001_R1_001_GTGA.nosymbio.fastq.bam 0.975790361242013
-#33_S33_L001_R1_001_GTGA.nosymbio.fastq.bam 0.984309114365413
 
 #Siderastrea with hannah's data
 16_S16_L001_R1_001_CTAC.nosymbio.fastq.bam 0.0150236838240874
@@ -937,139 +623,6 @@ SRR24593999.fastq.bam 0.635590731021121
 SRR24593990.fastq.bam 0.739010381638517
 17_S17_L001_R1_001_GTGA.nosymbio.fastq.bam 0.756400047942418
 SRR24593981.fastq.bam 0.838455322750344
-
-#maya sid all
-16_S16_L001_R1_001_TGTC.nosymbio.fastq.bam 0.0115167084854646
-16_S16_L001_R1_001_CTAC.nosymbio.fastq.bam 0.0116583708357781
-31_S31_L001_R1_001_ACCA.nosymbio.fastq.bam 0.0116900215890805
-16_S16_L001_R1_001_CATC.nosymbio.fastq.bam 0.0118629108549646
-16_S16_L001_R1_001_GACT.nosymbio.fastq.bam 0.0122636854190229
-16_S16_L001_R1_001_TGGT.nosymbio.fastq.bam 0.0126383365557114
-16_S16_L001_R1_001_AGTG.nosymbio.fastq.bam 0.0127992560885749
-16_S16_L001_R1_001_AGAC.nosymbio.fastq.bam 0.01339834021954
-16_S16_L001_R1_001_ACCA.nosymbio.fastq.bam 0.0134882257627477
-16_S16_L001_R1_001_GCTT.nosymbio.fastq.bam 0.0136649821349526
-16_S16_L001_R1_001_TCAG.nosymbio.fastq.bam 0.0149273897181125
-16_S16_L001_R1_001_GTGA.nosymbio.fastq.bam 0.0153307324316007
-16_S16_L001_R1_001_TCAC.nosymbio.fastq.bam 0.0154715231709018
-33_S33_L001_R1_001_GCTT.nosymbio.fastq.bam 0.016619455026219
-31_S31_L001_R1_001_CTAC.nosymbio.fastq.bam 0.0195339084149165
-30_S30_L001_R1_001_GACT.nosymbio.fastq.bam 0.0202566956239758
-33_S33_L001_R1_001_CTAC.nosymbio.fastq.bam 0.0245631280611158
-32_S32_L001_R1_001_CTAC.nosymbio.fastq.bam 0.0473031344503968
-33_S33_L001_R1_001_ACCA.nosymbio.fastq.bam 0.0511527144399103
-30_S30_L001_R1_001_CTAC.nosymbio.fastq.bam 0.0632103437963903
-SRR24593957.fastq.bam 0.0721166374609312
-SRR24593984.fastq.bam 0.0771362991384029
-32_S32_L001_R1_001_ACCA.nosymbio.fastq.bam 0.085864893416439
-29_S29_L001_R1_001_CTAC.nosymbio.fastq.bam 0.0889697490588872
-SRR24593993.fastq.bam 0.0922417069330582
-30_S30_L001_R1_001_CATC.nosymbio.fastq.bam 0.093575080843994
-30_S30_L001_R1_001_AGAC.nosymbio.fastq.bam 0.0948189357819162
-29_S29_L001_R1_001_ACCA.nosymbio.fastq.bam 0.0967898799735983
-32_S32_L001_R1_001_AGAC.nosymbio.fastq.bam 0.0971104941960916
-SRR24593969.fastq.bam 0.117530628141558
-SRR24593992.fastq.bam 0.120511821277136
-SRR24593982.fastq.bam 0.120762445989226
-29_S29_L001_R1_001_CATC.nosymbio.fastq.bam 0.124214327624149
-32_S32_L001_R1_001_AGTG.nosymbio.fastq.bam 0.124736876348975
-SRR24594015.fastq.bam 0.131229572871409
-SRR24594014.fastq.bam 0.137597288375194
-SRR24593972.fastq.bam 0.139105661558053
-29_S29_L001_R1_001_TGGT.nosymbio.fastq.bam 0.139927473299888
-SRR24593973.fastq.bam 0.141368911388435
-SRR24594008.fastq.bam 0.141439770297833
-SRR24594001.fastq.bam 0.147965219583851
-SRR24593987.fastq.bam 0.149308206706096
-SRR24593994.fastq.bam 0.153810046373887
-SRR24593968.fastq.bam 0.154419991144251
-SRR24593978.fastq.bam 0.156895001201855
-SRR24593979.fastq.bam 0.159486320969105
-33_S33_L001_R1_001_TGGT.nosymbio.fastq.bam 0.162973174984241
-SRR24593980.fastq.bam 0.16750436172303
-SRR24594007.fastq.bam 0.17200806418915
-SRR24594013.fastq.bam 0.173528768316797
-SRR24594011.fastq.bam 0.181714125799262
-SRR24593959.fastq.bam 0.191701090383857
-SRR24593985.fastq.bam 0.1917468122948
-SRR24593995.fastq.bam 0.19455627901449
-SRR24593955.fastq.bam 0.199082828948671
-SRR24593963.fastq.bam 0.201922730292891
-30_S30_L001_R1_001_ACCA.nosymbio.fastq.bam 0.215225252057553
-SRR24593983.fastq.bam 0.22143329197692
-SRR24593974.fastq.bam 0.232465380738668
-SRR24593977.fastq.bam 0.23589595794767
-SRR24593976.fastq.bam 0.236603556325059
-SRR24594004.fastq.bam 0.23899323129306
-17_S17_L001_R1_001_AGAC.nosymbio.fastq.bam 0.242618776597269
-SRR24594006.fastq.bam 0.243347415281031
-17_S17_L001_R1_001_TCAG.nosymbio.fastq.bam 0.245159266924568
-17_S17_L001_R1_001_CATC.nosymbio.fastq.bam 0.274842880324858
-33_S33_L001_R1_001_AGTG.nosymbio.fastq.bam 0.282120027508792
-SRR24593970.fastq.bam 0.283119986135172
-32_S32_L001_R1_001_GACT.nosymbio.fastq.bam 0.297000343938621
-33_S33_L001_R1_001_AGAC.nosymbio.fastq.bam 0.297345250037114
-SRR24594010.fastq.bam 0.303948500729481
-SRR24593960.fastq.bam 0.304834378179866
-SRR24593996.fastq.bam 0.307569049013797
-SRR24593966.fastq.bam 0.317454789803163
-SRR24594002.fastq.bam 0.321657440905053
-SRR24594009.fastq.bam 0.329140429930164
-SRR24593965.fastq.bam 0.335274526884773
-SRR24593967.fastq.bam 0.336874355043755
-17_S17_L001_R1_001_CTAC.nosymbio.fastq.bam 0.356574148711743
-SRR24593964.fastq.bam 0.35683725460387
-SRR24593989.fastq.bam 0.366704560929792
-33_S33_L001_R1_001_CATC.nosymbio.fastq.bam 0.376326778825974
-SRR24594005.fastq.bam 0.377611885783851
-SRR24593997.fastq.bam 0.380586948563273
-SRR24594003.fastq.bam 0.38924260732612
-SRR24593971.fastq.bam 0.393061007547571
-SRR24593975.fastq.bam 0.397193225425363
-SRR24593998.fastq.bam 0.397294283471808
-31_S31_L001_R1_001_TGGT.nosymbio.fastq.bam 0.403620182563747
-17_S17_L001_R1_001_AGTG.nosymbio.fastq.bam 0.413523488165931
-32_S32_L001_R1_001_CATC.nosymbio.fastq.bam 0.41988126797779
-32_S32_L001_R1_001_TGGT.nosymbio.fastq.bam 0.424537974684883
-17_S17_L001_R1_001_TGTC.nosymbio.fastq.bam 0.450773917303862
-17_S17_L001_R1_001_TGGT.nosymbio.fastq.bam 0.456894664473065
-SRR24593962.fastq.bam 0.465712747710178
-31_S31_L001_R1_001_AGTG.nosymbio.fastq.bam 0.474743939078282
-SRR24593986.fastq.bam 0.486000200460653
-SRR24593961.fastq.bam 0.49052304752192
-17_S17_L001_R1_001_ACCA.nosymbio.fastq.bam 0.511504338678245
-SRR24593988.fastq.bam 0.514011921033786
-17_S17_L001_R1_001_GACT.nosymbio.fastq.bam 0.548897893525643
-SRR24593958.fastq.bam 0.555980900777715
-SRR24593991.fastq.bam 0.560734134898389
-SRR24594000.fastq.bam 0.576024766925768
-SRR24593956.fastq.bam 0.604496211495454
-SRR24593999.fastq.bam 0.605256377415499
-SRR24594012.fastq.bam 0.605257268890665
-17_S17_L001_R1_001_GCTT.nosymbio.fastq.bam 0.613293379145654
-29_S29_L001_R1_001_GACT.nosymbio.fastq.bam 0.620068592899194
-31_S31_L001_R1_001_AGAC.nosymbio.fastq.bam 0.658833512185802
-SRR24593990.fastq.bam 0.702447307270342
-17_S17_L001_R1_001_TCAC.nosymbio.fastq.bam 0.712978940117481
-29_S29_L001_R1_001_AGTG.nosymbio.fastq.bam 0.728172678911238
-17_S17_L001_R1_001_GTGA.nosymbio.fastq.bam 0.732586383915938
-29_S29_L001_R1_001_AGAC.nosymbio.fastq.bam 0.764880952207388
-30_S30_L001_R1_001_GCTT.nosymbio.fastq.bam 0.811395940115579
-SRR24593981.fastq.bam 0.815556243386746
-33_S33_L001_R1_001_TCAG.nosymbio.fastq.bam 0.832554364611298
-33_S33_L001_R1_001_TCAC.nosymbio.fastq.bam 0.846846850561337
-31_S31_L001_R1_001_TCAC.nosymbio.fastq.bam 0.863545099270983
-31_S31_L001_R1_001_CATC.nosymbio.fastq.bam 0.86577849043992
-30_S30_L001_R1_001_AGTG.nosymbio.fastq.bam 0.882473798016971
-32_S32_L001_R1_001_GTGA.nosymbio.fastq.bam 0.921800061105384
-30_S30_L001_R1_001_TGTC.nosymbio.fastq.bam 0.941125114701493
-32_S32_L001_R1_001_GCTT.nosymbio.fastq.bam 0.944065645841044
-29_S29_L001_R1_001_TCAG.nosymbio.fastq.bam 0.962599119505268
-29_S29_L001_R1_001_TGTC.nosymbio.fastq.bam 0.970718816294998
-30_S30_L001_R1_001_GTGA.nosymbio.fastq.bam 0.976153516818109
-31_S31_L001_R1_001_GTGA.nosymbio.fastq.bam 0.98476746395082
-33_S33_L001_R1_001_GTGA.nosymbio.fastq.bam 0.990065785350922
-
 
 # scp dd.pdf to laptop to look at distribution of base quality scores, 
 #fraction of sites in each sample passing coverage thresholds, 
@@ -1188,6 +741,12 @@ wc -l bams_noclones
 
 #now with clones removed - only 113 samples left so 
 
+#SET minInd to 80% of samples!!
+#por
+FILTERS="-uniqueOnly 1 -remove_bads 1 -minMapQ 20 -minQ 25 -dosnpstat 1 -doHWE 1 -sb_pval 1e-5 -hetbias_pval 1e-5 -skipTriallelic 1 -minInd 18 -snp_pval 1e-5 -minMaf 0.05"
+TODO="-domajorminor 1 -domaf 1 -docounts 1 -makeMatrix 1 -doIBS 1 -doCov 1 -dogeno 8 -dobcf 1 -doPost 1 -doGlf 2"
+
+#sid
 FILTERS="-uniqueOnly 1 -remove_bads 1 -minMapQ 20 -minQ 25 -dosnpstat 1 -doHWE 1 -sb_pval 1e-5 -hetbias_pval 1e-5 -skipTriallelic 1 -minInd 80 -snp_pval 1e-5 -minMaf 0.05"
 TODO="-domajorminor 1 -domaf 1 -docounts 1 -makeMatrix 1 -doIBS 1 -doCov 1 -dogeno 8 -dobcf 1 -doPost 1 -doGlf 2"
 
@@ -1199,6 +758,7 @@ echo $NSITES
 # 14878 MP hannah combine
 # 14716 MP hannah combine noclones
 # 12947 MP sid all w/min ind 80 for 113 samples
+# 15646 MP por noclones
 
 # the -doVcf flag produces a vcf file at this stage.
 # with this new version of angsd it doesn't work to create the vcf file - need to run:
@@ -1207,6 +767,8 @@ bcftools view myresult.noclones.bcf -O v -o myresult.noclones.vcf #creates the u
 # can also use: -O v if you want the uncompressed file to use 
 #uncompressed is the file plink --vcf the ngsRelate and bayescan steps expect
 tabix -p vcf myresult.noclones.vcf.gz #this creates the .tbi
+
+#download myresult.noclones.ibsMat
 
 #------------------------------NgsAdmix
 
@@ -1724,7 +1286,8 @@ realSFS fst stats p23_outliers.fst.idx
 # Download and Install
 
 pwd
-/projectnb/davies-hb/hannah/TVE_Panama/TVE_2bRAD/bin
+#/projectnb/davies-hb/hannah/TVE_Panama/TVE_2bRAD/bin
+/proj/kdcastil/users/mayapow/2bRAD
 
 git clone --recursive https://github.com/SAMtools/htslib
 git clone https://github.com/ANGSD/ngsRelate
@@ -1738,46 +1301,20 @@ cd htslib/;make -j2;cd ../ngsRelate;make HTSSRC=../htslib/
 
 pwd
 #/projectnb/davies-hb/hannah/TVE_Panama/TVE_2bRAD/tufts_custom_pipeline_files/denovo_nosym
+/proj/kdcastil/users/mayapow/2bRAD/denovo_nosym
 
-# bams list with samples excluding technical replicates and clones:
-bams_noclones
-# vcf file with samples excluding technical replicates and clones:
-myresult2.noclone.vcf
-#gzipped vcf file:
+#gzipped vcf file with samples excluding technical replicates and clones:
+myresult.noclone.vcf.gz
+myresult.vcf.gz
 
-
-# need to index vcf file first:
-#module load samtools
-
-#bgzip -c myresult2.noclone.vcf > myresult2.noclone.vcf.gz
-#tabix -p vcf myresult2.noclone.vcf.gz
-
-cat run_ngsrelate.qsub
-#!/bin/bash -l
-#$ -P davies-hb
-#$ -N ngsrelate # job name, anything you want
-#$ -m bea
-#$ -V # inherit the submission environment
-#$ -cwd # start job in submission directory
-#$ -M hannahaichelman@gmail.com
-#$ -j y # Join standard output and error to a single file
-#$ -o ngsrelate.qlog
-#$ -l h_rt=48:00:00
-#$ -pe omp 8
-
-/projectnb/davies-hb/hannah/TVE_Panama/TVE_2bRAD/bin/ngsRelate/ngsRelate -h /projectnb/davies-hb/hannah/TVE_Panama/TVE_2bRAD/tufts_custom_pipeline_files/denovo_nosym/myresult2.noclone.vcf.gz.tbi -O ngsrelate_vcf.res
+#/projectnb/davies-hb/hannah/TVE_Panama/TVE_2bRAD/bin/ngsRelate/ngsRelate -h /projectnb/davies-hb/hannah/TVE_Panama/TVE_2bRAD/tufts_custom_pipeline_files/denovo_nosym/myresult2.noclone.vcf.gz.tbi -O ngsrelate_vcf.res
 
 /proj/kdcastil/users/mayapow/2bRAD/ngsRelate/ngsRelate -h myresult.vcf.gz -O ngsrelate_vcf.res
 
-# This version with the vcf file didn't work even after tabix'ing the vcf file...
-# So trying the method by running with NGS data
-
-
-### re-run angsd to get .glf.gz file
 # doing this on two datasets - one with technical replicates and clones removed (ngsrelate.noclone) and one with technical replicates removed but one clone pair retained (ngsrelate.noclone.allsamps)
 # following the pipeline on the ngsrelate website: https://github.com/ANGSD/NgsRelate
-module load angsd
 
+#MAYA NOT DOING ANY OF THIS BELOW BC GOT ABOVE TO WORK
 
 ### First we generate a file with allele frequencies (angsdput.mafs.gz) and a file with genotype likelihoods (angsdput.glf.gz).
 angsd -b bams_noclones -gl 2 -domajorminor 1 -snp_pval 1e-6 -domaf 1 -minmaf 0.05 -doGlf 3 -out ngsrelate.noclone

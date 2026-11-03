@@ -1,6 +1,10 @@
-#### Admixture plot, tidyverse version ####
+#### Admixture plotting ####
+### Maya Powell
+
 library(tidyverse)
 library(here)
+library(ggplot2)
+library(ggpubr)
 
 #### Sid all data
 #maya sid all

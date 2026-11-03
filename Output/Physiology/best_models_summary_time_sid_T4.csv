@@ -1,0 +1,11 @@
+response,best_model,model_formula,AIC,significant_predictors
+chla_log,native_sym_add_transplant_int,chla_log ~ (native_site + sym_dom) * native_transplant + (1 |      native_site/parent),10.002174076324062,"native_site, sym_dom, native_site:native_transplant"
+chla_sym_log,native_sym_add_transplant_int,chla_sym_log ~ (native_site + sym_dom) * native_transplant +      (1 | native_site/parent),13.69299320550406,none
+sym_density_log,native_sym_int,sym_density_log ~ native_site * sym_dom + (1 | native_site/parent),5.276120652430924,native_site:sym_dom
+dry_weight,site_add,dry_weight ~ native_site + native_transplant + (1 | native_site/parent),208.34514309550275,native_site
+PGROSS.RDAY,site_int,PGROSS.RDAY ~ native_site * native_transplant + (1 | native_site/parent),11.781038649674176,native_site:native_transplant
+PNET,site_int_sym_add,PNET ~ native_site * native_transplant + sym_dom + (1 | native_site/parent),35.91381256898076,native_site:native_transplant
+PGROSS,site_int_sym_int,PGROSS ~ native_site * native_transplant * sym_dom + (1 | native_site/parent),32.02200403866003,"native_site:native_transplant, NA, NA"
+RDARK_abs,transplant,RDARK_abs ~ native_transplant + (1 | native_site/parent),-2.716957583205751,none
+LEDR_abs_log,site_int,LEDR_abs_log ~ native_site * native_transplant + (1 | native_site/parent),5.689538053622673,"native_transplant, native_site:native_transplant"
+calcification,native,calcification ~ native_site + (1 | native_site/parent),29.254143629139133,none

@@ -1,7 +1,8 @@
+#### ANGSD IBS PCA 2bRAD Script
 #Maya Powell 
-###Process rewritten from Hannah Aichelman TVE IBS script###
+#rewritten from Hannah Aichelman TVE IBS script
 
-#### Setup ####
+#### libraries
 library(tidyverse)
 library(vegan)
 library(here)
@@ -10,8 +11,10 @@ library(ggdendro)
 ### Branching Porites species
 
 #read in meta
-por_meta <- read_csv(here("2bRAD/por/por_metadata.csv"), show_col_types = FALSE) %>%
+por_meta <- read_csv(here("2bRAD/por/por_metadata_noclones.csv"), show_col_types = FALSE) %>%
   mutate(sample_id = as.character(sample_id))
+#por_meta <- read_csv(here("2bRAD/por/por_metadata.csv"), show_col_types = FALSE) %>%
+#  mutate(sample_id = as.character(sample_id))
 # id_col used below: adjust "sample_id" to whatever column matches your bam/ngsrelate order
 lin_k2 <- read_csv(here("2bRAD/por/lineage_por_k2.csv"), show_col_types = FALSE) %>% 
   mutate(sample_id = as.character(sample_id), lineage = as.character(lineage)) %>%
@@ -27,15 +30,27 @@ por_lin <- por_meta |> left_join(lin_k2) |>
   left_join(lin_k3) |> left_join(lin_k4)
 
 #read in ibs
-por_ibs <- as.matrix(read.table(here("2bRAD/por/myresult.ibsMat")))
+por_ibs <- as.matrix(read.table(here("2bRAD/por/myresult.noclones.ibsMat")))
+#por_ibs <- as.matrix(read.table(here("2bRAD/por/myresult.ibsMat")))
 dimnames(por_ibs) <- list(por_meta$sample_id, por_meta$sample_id)
 
-#dendrogram
+#dendrogram using ggdendrogram
 por_den <- ggdendrogram(hclust(as.dist(por_ibs), method = "average")) +
-  labs(x = "Sample ID", y = "IBS distance") +
-  #geom_hline(yintercept = 0.265) +
-  theme_bw()
+  labs(x = "Sample ID", y = "IBS distance") + #check with other method from h
+  theme_classic()
 por_den
+
+#clonal groups/new genotypes:
+#58,59,60
+#53
+#51,52,54,55,56,57
+#71,74,75,79,80
+#77
+#72,73,76,78
+
+#dendrogram using plot
+plot(hclust(as.dist(por_ibs),"ave"))
+abline(h=0.265, lwd = 2, lty = 2, col = "grey")
 
 #pcoa + cap
 por_pcoa <- capscale(por_ibs ~ 1)

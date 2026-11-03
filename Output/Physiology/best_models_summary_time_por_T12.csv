@@ -1,0 +1,11 @@
+response,best_model,model_formula,AIC,significant_predictors
+chla_sqrt,transplant,chla_sqrt ~ native_transplant + (1 | native_site/parent),58.9960355966151,none
+chla_sym_sqrt,null,chla_sym_sqrt ~ 1 + (1 | native_site/parent),29.21805011493474,NA
+sym_density_sqrt,null,sym_density_sqrt ~ 1 + (1 | native_site/parent),-6.653424692737413,NA
+dry_weight,site_int,dry_weight ~ native_site * native_transplant + (1 | native_site/parent),177.51908839059482,"native_site, native_transplant, native_site:native_transplant"
+PGROSS.RDAY,site_int,PGROSS.RDAY ~ native_site * native_transplant + (1 | native_site/parent),-15.964037172591503,native_site:native_transplant
+PNET,site_int,PNET ~ native_site * native_transplant + (1 | native_site/parent),11.572762252896052,native_site:native_transplant
+PGROSS,transplant,PGROSS ~ native_transplant + (1 | native_site/parent),44.469715156947466,none
+RDARK_abs,transplant,RDARK_abs ~ native_transplant + (1 | native_site/parent),-10.53257392754223,none
+LEDR_abs,transplant,LEDR_abs ~ native_transplant + (1 | native_site/parent),0.5453877429138032,native_transplant
+calcification,site_add,calcification ~ native_site + native_transplant + (1 | native_site/parent),36.204477806569855,native_transplant

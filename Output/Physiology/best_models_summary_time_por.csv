@@ -1,0 +1,11 @@
+response,best_model,model_formula,AIC,significant_predictors
+chla_sqrt,site_int_time_int,chla_sqrt ~ native_site * native_transplant * timepoint + (1 |      native_site/parent),101.3855987727542,"native_transplant, timepoint, native_site:native_transplant, native_site:timepoint, native_transplant:timepoint, native_site:native_transplant:timepoint"
+chla_sym_sqrt,transplant_time,chla_sym_sqrt ~ native_transplant + timepoint + (1 | native_site/parent),68.83650989250549,timepoint
+sym_density_sqrt,sym_time_add_native_int,sym_density_sqrt ~ (sym_dom + timepoint) * native_site + (1 |      native_site/parent),9.993935593676515,"sym_dom, timepoint, NA"
+dry_weight,site_int_time_int,dry_weight ~ native_site * native_transplant * timepoint + (1 |      native_site/parent),296.8359948201642,"native_transplant, timepoint, native_site:timepoint, native_transplant:timepoint, native_site:native_transplant:timepoint"
+PGROSS.RDAY,site_int,PGROSS.RDAY ~ native_site * native_transplant + (1 | native_site/parent),9.762015149162728,native_site:native_transplant
+PNET,site_int,PNET ~ native_site * native_transplant + (1 | native_site/parent),34.79370072164661,native_site:native_transplant
+PGROSS,site_int,PGROSS ~ native_site * native_transplant + (1 | native_site/parent),70.70047322421172,native_site:native_transplant
+RDARK_abs,null,RDARK_abs ~ 1 + (1 | native_site/parent),-59.8442174513975,NA
+LEDR_abs,native_time_int_sym_add,LEDR_abs ~ native_site * timepoint + sym_dom + (1 | native_site/parent),-22.039922292482828,"timepoint, native_site:timepoint"
+calcification,site_int,calcification ~ native_site * native_transplant + (1 | native_site/parent),46.75151846030593,native_transplant

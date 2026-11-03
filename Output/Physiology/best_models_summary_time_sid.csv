@@ -1,0 +1,11 @@
+response,best_model,model_formula,AIC,significant_predictors
+chla_log,site_sym_time_int,chla_log ~ native_site * native_transplant * timepoint * sym_dom +      (1 | native_site/parent),-11.754725754775151,"timepoint, native_site:native_transplant, native_site:timepoint, native_site:sym_dom, NA, timepoint:sym_dom, native_site:native_transplant:timepoint, NA, NA, NA"
+chla_sym_log,transplant_sym_time_int_native_add,chla_sym_log ~ native_transplant * sym_dom * timepoint + native_site +      (1 | native_site/parent),20.238419036882856,"sym_dom, timepoint, sym_dom:timepoint, native_transplant:sym_dom:timepoint"
+sym_density_log,native_sym_time_int_transplant_add,sym_density_log ~ native_site * sym_dom * timepoint + native_transplant +      (1 | native_site/parent),17.431085124309718,"sym_dom, sym_dom:timepoint, native_site:sym_dom:timepoint"
+dry_weight,site_sym_time_int,dry_weight ~ native_site * native_transplant * timepoint * sym_dom +      (1 | native_site/parent),535.6329640603248,"native_site, sym_dom, native_site:native_transplant, native_transplant:timepoint, NA, native_site:native_transplant:timepoint, NA, native_site:timepoint:sym_dom, NA, NA"
+PGROSS.RDAY,site_int_time_add,PGROSS.RDAY ~ native_site * native_transplant + timepoint + (1 |      native_site/parent),-19.799367680598948,"native_site, timepoint, native_site:native_transplant"
+PNET,site_int_time_add,PNET ~ native_site * native_transplant + timepoint + (1 | native_site/parent),75.9324871085403,"native_site, timepoint, native_site:native_transplant"
+PGROSS,site_int_time_add,PGROSS ~ native_site * native_transplant + timepoint + (1 | native_site/parent),118.48896453714178,timepoint
+RDARK_abs,native_time,RDARK_abs ~ native_site + timepoint + (1 | native_site/parent),-3.8913420481432475,timepoint
+LEDR_abs_log,site_int_time_int,LEDR_abs_log ~ native_site * native_transplant * timepoint +      (1 | native_site/parent),48.5368225373433,"native_site, timepoint, native_site:native_transplant:timepoint"
+calcification,native_sym_int_time_add,calcification ~ native_site * sym_dom + timepoint + (1 | native_site/parent),42.617897049658,"sym_dom, timepoint, native_site:sym_dom"
